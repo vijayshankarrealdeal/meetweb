@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 import  requests
 from werkzeug.exceptions import HTTPException
 from flask_cors import CORS
+import pandas as pd
 
 app = Flask(__name__)
 CORS(app)
@@ -18,5 +19,38 @@ def get_movieList():
     url = 'https://api.themoviedb.org/3/trending/all/day?api_key='+api_key
     data = requests.get(url)
     return data.json()
+
+
+@app.route('/api/hotels/<int:checkin_day>/<int:checkin_month>/<int:checkin_year>/<int:checkout_day>/<int:checkout_month>/<int:checkout_year>',methods=["GET"])
+def hotelAPi(checkin_day, checkin_month, checkin_year, checkout_day, checkout_month, checkout_year):
+    days = abs(checkout_day - checkin_day)
+    month = abs(checkin_month - checkout_month)
+    yr = abs(checkin_year - checkout_year)
+    total = (days+month+yr)/2
+    df = pd.read_csv('hotels.csv')
+    def spiltx(x):
+        if 'km' in x:
+            x = x.split('km')
+            x = float(x[0])*1000
+        else:
+            x = x.split('m')
+            x = x[0]
+        return int(x)
+    def format_price(x,total,lam):
+        p = x.split("₹")[-1].split(',')
+        rt = float(''.join(p))
+        x = int(rt+total*lam)
+        x = str(x)
+        x = "₹ " + x[:-3] + ","+x[-3:]
+        return x
+    def money_numX(x):
+        p = x.split("₹")[-1].split(',')
+        rt = int(''.join(p))
+        return rt
+    df.money = df.money.apply(lambda x:format_price(x,total,0.2))
+    df['distanceM'] = df.distance.apply(spiltx)
+    df['money_num'] = df.money.apply(money_numX)
+    hoteldata =  [df.T.to_dict()[i] for i in df.T.to_dict()]
+    return jsonify({"data": hoteldata})    
 
 app.config["DEBUG"] = True
