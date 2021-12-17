@@ -53,4 +53,20 @@ def hotelAPi(checkin_day, checkin_month, checkin_year, checkout_day, checkout_mo
     hoteldata =  [df.T.to_dict()[i] for i in df.T.to_dict()]
     return jsonify({"data": hoteldata})    
 
+"""
+hotel api
+"""
+@app.route('/api/shop/<string:type>',methods=["GET"])
+def get(type_of_shop):
+    x = []
+    if type_of_shop == 'n':
+        df = pd.read_csv('data_shop_national.csv',index_col=0)
+        
+        x = [df.T.to_dict()[i] for i in df.T.to_dict()]
+    else:
+        df = pd.read_csv('data_shop_international.csv',index_col=0)
+        x = [df.T.to_dict()[i] for i in df.T.to_dict()]
+    return jsonify({"data":x})
+
+
 app.config["DEBUG"] = True
