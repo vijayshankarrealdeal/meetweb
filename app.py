@@ -77,7 +77,7 @@ def get_board():
     options.add_argument("--no-sandbox")
     options.add_argument('--headless')
     driver = webdriver.Chrome(
-        "chromedriver.exe", options=options)
+        os.path.join("chromedriver.exe"), options=options)
     driver.maximize_window()
     driver.get('https://www.bangaloreairport.com/kempegowda-departures')
     items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
