@@ -17,6 +17,6 @@ def get_movieList():
     api_key = '38f5b3c12b04920fbe5fd093187951af'
     url = 'https://api.themoviedb.org/3/trending/all/day?api_key='+api_key
     data = requests.get(url)
-    return jsonify({'data':data.text})
+    return jsonify(data)
 
 app.config["DEBUG"] = True
