@@ -72,30 +72,8 @@ def get(type_shop):
 ############################################### GEt status########################
 @app.route('/api/getflightstatus',methods=["GET"])
 def get_board():
-    options = webdriver.ChromeOptions()
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--no-sandbox")
-    options.add_argument('--headless')
-    driver = webdriver.Chrome(
-        os.path.join("chromedriver.exe"), options=options)
-    driver.maximize_window()
-    driver.get('https://www.bangaloreairport.com/kempegowda-departures')
-    items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
-    data = []
-    for item in items:
-        try:
-            k = {}
-            k['departure'] = item.find_element_by_xpath('.//div[1]').text
-            k['time'] = item.find_element_by_xpath('.//div[2]//div[1]').text
-            k['flight'] = item.find_element_by_xpath('.//div[2]//div[2]').text
-            k['airline'] = item.find_element_by_xpath('.//div[2]//div[3]').text
-            k['info_url'] = item.find_element_by_xpath('.//div[2]').find_element_by_tag_name('a').get_attribute('href')
-            k['status'] = item.find_element_by_xpath('.//div[contains(@class ,"flight-col flight-col__status")]').text
-            data.append(k)
-        except:
-            pass
-    df = pd.DataFrame(data)
-    driver.close()
-    return jsonify({"data":[df.T.to_dict()[i] for i in df.T.to_dict()]}) 
+    url = 'https://mini-bell-bottom.herokuapp.com/getflightstatus/'
+    data = requests.get(url)
+    return data
 
 app.config["DEBUG"] = True
