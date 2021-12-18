@@ -1,6 +1,6 @@
 import psycopg2
 
-host = "meetwebflask-server"
+host = "meetwebflask-server.postgres.database.azure.com port=5432"
 dbname = "postgres"
 user = "ncgfeatlso"
 password = "PGO0637ETON66601$"
