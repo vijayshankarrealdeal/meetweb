@@ -1,10 +1,10 @@
 from flask import Flask, jsonify
 import  requests
-from werkzeug.exceptions import HTTPException
+#from werkzeug.exceptions import HTTPException
 from flask_cors import CORS
 import pandas as pd
-from selenium import webdriver
-from selenium.webdriver import ChromeOptions
+#from selenium import webdriver
+#from selenium.webdriver import ChromeOptions
 import os
 app = Flask(__name__)
 CORS(app)
@@ -70,10 +70,11 @@ def get(type_shop):
         x = [df.T.to_dict()[i] for i in df.T.to_dict()]
     return jsonify({"data":x})
 ############################################### GEt status########################
-@app.route('/api/getflightstatus',methods=["GET"])
-def get_board():
-    url = 'https://mini-bell-bottom.herokuapp.com/getflightstatus/'
-    data = requests.get(url)
-    return data
+# @app.route('/api/getflightstatus',methods=["GET"])
+# def get_board():
+#     url = 'https://mini-bell-bottom.herokuapp.com/getflightstatus/'
+#     data = requests.get(url)
+#     print(data)
+#     return data.json()
 
 app.config["DEBUG"] = True
