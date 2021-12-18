@@ -3,53 +3,22 @@ import  requests
 #from werkzeug.exceptions import HTTPException
 from flask_cors import CORS
 import pandas as pd
-import psycopg2
 #from selenium import webdriver
 #from selenium.webdriver import ChromeOptions
 import os
+
+from db import create_table, insert_data, read_data
 app = Flask(__name__)
 CORS(app)
-
-host = "meetwebflask-server"
-dbname = "postgres"
-user = "ncgfeatlso"
-password = "PGO0637ETON66601$"
-sslmode = "require"
-conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
-
-
-
-
-
+create_table()
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
-    conn = psycopg2.connect(conn_string) 
-    cursor = conn.cursor()
-    try:
-        cursor.execute("CREATE TABLE student (id serial PRIMARY KEY, fname VARCHAR(50), lname VARCHAR(50),pet VARCHAR(50));")
-    except:
-        pass
-    cursor.execute("INSERT INTO inventory (fname, lname,pet) VALUES (%s, %s,%s);", (fname, lname,pet))
-    conn.commit()
-    cursor.close()
-    conn.close()
-    return jsonify({"status":"Done"})
+    status = insert_data(fname,lname,pet)
+    return jsonify({"status":status})
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
-    conn = psycopg2.connect(conn_string) 
-    cursor = conn.cursor()
-    data = []
-    rows = cursor.fetchall()
-    for row in rows:
-        k = {}
-        k['fname'] = str(row[0])
-        k['lname'] = str(row[1])
-        k['pet'] = str(row[2])
-        data.append(k)
-    conn.commit()
-    cursor.close()
-    conn.close()
+    data = read_data()
     return jsonify({"data":data})
 
 
