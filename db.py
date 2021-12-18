@@ -1,9 +1,9 @@
 import psycopg2
 
-host = "webdb.postgres.database.azure.com port=5432"
+host = "flightapp.postgres.database.azure.com port=5432"
 dbname = "postgres"
-user = "vijayrealdeal"
-password = "Hello-World"
+user = "flightappdb"
+password = "flightApp£1234567890"
 sslmode = "require"
 conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
 
