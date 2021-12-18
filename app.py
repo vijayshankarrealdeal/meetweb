@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 app = Flask(__name__)
 CORS(app)
-password = "Google@990"
+password = "PGO0637ETON66601$"
 username = "ncgfeatlso"
 host_name = "meetwebflask-server.postgres.database.azure.com/postgres?sslmode=require"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
