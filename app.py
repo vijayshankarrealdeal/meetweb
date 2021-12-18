@@ -3,11 +3,103 @@ import  requests
 #from werkzeug.exceptions import HTTPException
 from flask_cors import CORS
 import pandas as pd
+from flask_sqlalchemy import SQLAlchemy
+
 #from selenium import webdriver
 #from selenium.webdriver import ChromeOptions
 import os
 app = Flask(__name__)
 CORS(app)
+
+db_name = 'postgres'
+db_password = 'Google@990'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = f'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname={db_name} user=ncgfeatlso password={db_password} sslmode=require'
+
+db = SQLAlchemy(app)
+
+class Student(db.Model):
+    __tablename__ = 'students'
+    id = db.Column(db.Integer, primary_key=True)
+    fname = db.Column(db.String(40))
+    lname = db.Column(db.String(40))
+    pet = db.Column(db.String(40))
+
+    def __init__(self,fname,lname,pet):
+        self.fname = fname
+        self.lname =lname
+        self.pet = pet
+
+@app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
+def submit(fname,lname,pet):
+    return jsonify({"fname":fname,"lname":lname,"pet":pet})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @app.route('/api/get-message', methods=['GET'])
 def getMessage():
