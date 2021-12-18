@@ -1,12 +1,13 @@
 import psycopg2
 
-host = "meetwebflask-server.postgres.database.azure.com port=5432"
+host = "webdb.postgres.database.azure.com port=5432"
 dbname = "postgres"
-user = "ncgfeatlso"
-password = "PGO0637ETON66601$"
+user = "vijayrealdeal"
+password = "Hello-World"
 sslmode = "require"
 conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
 
+# host=webdb.postgres.database.azure.com port=5432 dbname={your_database} user=vijayrealdeal password={your_password} sslmode=require
 
 def create_table():
     conn = psycopg2.connect(conn_string) 

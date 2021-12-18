@@ -11,7 +11,7 @@ from db import create_table, insert_data, read_data
 app = Flask(__name__)
 CORS(app)
 @app.route('/api/createdb', methods=['GET'])
-def getMessage():
+def createTable():
     data = create_table()
     return jsonify({"data":data})
 
