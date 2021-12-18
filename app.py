@@ -10,7 +10,12 @@ import os
 from db import create_table, insert_data, read_data
 app = Flask(__name__)
 CORS(app)
-#create_table()
+@app.route('/api/createdb', methods=['GET'])
+def getMessage():
+    data = create_table()
+    return jsonify({"data":data})
+
+
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
     status = insert_data(fname,lname,pet)
