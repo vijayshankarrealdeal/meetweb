@@ -29,10 +29,18 @@ class Student(db.Model):
         self.fname = fname
         self.lname =lname
         self.pet = pet
-
+ 
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
-    return jsonify({"fname":fname,"lname":lname,"pet":pet})
+    student = Student(fname,lname,pet)
+    db.session.add(student)
+    db.session.commit()
+    return jsonify({"status":"Success"})
+
+@app.route('/api/get_data',methods = ["GET"])
+def get_request():
+    student_result = db.session.query(Student).filter(Student.id  == 1)
+    return jsonify({"fname":student_result.fname,"lname":student_result.lname,"pet":student_result.pet})
 
 
 
