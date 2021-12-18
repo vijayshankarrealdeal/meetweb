@@ -5,6 +5,8 @@ import pandas as pd
 import os
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
+from selenium import webdriver
+#from webdriver_manager.chrome import ChromeDriverManager
 
 from db import create_table, insert_data, read_data
 app = Flask(__name__)
@@ -159,7 +161,7 @@ def get_board():
     options.add_argument("--headless")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--no-sandbox")
-    driver = webdriver.Chrome(executable_path =  "chromedriver", options=options)
+    driver = webdriver.Chrome(executable_path = os.path.join("chromedriver"), options=options)
     driver.maximize_window()
     driver.get('https://www.bangaloreairport.com/kempegowda-departures')
     items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
