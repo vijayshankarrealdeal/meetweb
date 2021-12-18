@@ -11,16 +11,13 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-db_name = 'postgres'
-db_password = 'Google@990'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = f'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname={db_name} user=ncgfeatlso password={db_password} sslmode=require'
-ex = ''
+app.config['SQLALCHEMY_DATABASE_URI'] = 'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname=postgres user=ncgfeatlso password=Google@990 sslmode=require'
 db = SQLAlchemy(app)
 try:
     db.create_all()
-except Exception as ex: 
-    ex = ''
+except:
+    pass
 class Student(db.Model):
     __tablename__ = 'students'
     id = db.Column(db.Integer, primary_key=True)
@@ -41,7 +38,7 @@ def submit(fname,lname,pet):
         db.session.commit()
         return jsonify({"status":"Success"})
     except  Exception as e:
-        return jsonify({"excepection":e,"mainEx":ex})
+        return jsonify({"excepection":str(e)})
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
