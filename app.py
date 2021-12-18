@@ -15,9 +15,12 @@ db_name = 'postgres'
 db_password = 'Google@990'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = f'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname={db_name} user=ncgfeatlso password={db_password} sslmode=require'
-
+ex = ''
 db = SQLAlchemy(app)
-
+try:
+    db.create_all()
+except Exception as ex: 
+    ex = ''
 class Student(db.Model):
     __tablename__ = 'students'
     id = db.Column(db.Integer, primary_key=True)
@@ -29,19 +32,20 @@ class Student(db.Model):
         self.fname = fname
         self.lname =lname
         self.pet = pet
-try:
-    db.create_all()
-except: 
-    pass
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
-    student = Student(fname,lname,pet)
-    db.session.add(student)
-    db.session.commit()
-    return jsonify({"status":"Success"})
+
+    try:
+        student = Student(fname,lname,pet)
+        db.session.add(student)
+        db.session.commit()
+        return jsonify({"status":"Success"})
+    except  Exception as e:
+        return jsonify({"excepection":e,"mainEx":ex})
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
+
     student_result = db.session.query(Student).filter(Student.id  == 1)
     return jsonify({"fname":student_result.fname,"lname":student_result.lname,"pet":student_result.pet})
 
