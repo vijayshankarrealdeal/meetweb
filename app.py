@@ -3,53 +3,54 @@ import  requests
 #from werkzeug.exceptions import HTTPException
 from flask_cors import CORS
 import pandas as pd
-from flask_sqlalchemy import SQLAlchemy
-
+import psycopg2
 #from selenium import webdriver
 #from selenium.webdriver import ChromeOptions
 import os
 app = Flask(__name__)
 CORS(app)
+
+host = "meetwebflask-server"
+dbname = "postgres"
+user = "ncgfeatlso"
 password = "PGO0637ETON66601$"
-username = "ncgfeatlso"
-host_name = "meetwebflask-server.postgres.database.azure.com/postgres?sslmode=require"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+sslmode = "require"
+conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{username}:{password}@{host_name}'
 
-# 'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname=postgres user=ncgfeatlso password=Google@990 sslmode=require'
-db = SQLAlchemy(app)
-try:
-    db.create_all()
-except:
-    pass
-class Student(db.Model):
-    __tablename__ = 'students'
-    id = db.Column(db.Integer, primary_key=True)
-    fname = db.Column(db.String(40))
-    lname = db.Column(db.String(40))
-    pet = db.Column(db.String(40))
 
-    def __init__(self,fname,lname,pet):
-        self.fname = fname
-        self.lname =lname
-        self.pet = pet
+
+
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
-
+    conn = psycopg2.connect(conn_string) 
+    cursor = conn.cursor()
     try:
-        student = Student(fname,lname,pet)
-        db.session.add(student)
-        db.session.commit()
-        return jsonify({"status":"Success"})
-    except  Exception as e:
-        return jsonify({"excepection":str(e)})
+        cursor.execute("CREATE TABLE student (id serial PRIMARY KEY, fname VARCHAR(50), lname VARCHAR(50),pet VARCHAR(50));")
+    except:
+        pass
+    cursor.execute("INSERT INTO inventory (fname, lname,pet) VALUES (%s, %s,%s);", (fname, lname,pet))
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return jsonify({"status":"Done"})
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
-
-    student_result = db.session.query(Student).filter(Student.id  == 1)
-    return jsonify({"fname":student_result.fname,"lname":student_result.lname,"pet":student_result.pet})
+    conn = psycopg2.connect(conn_string) 
+    cursor = conn.cursor()
+    data = []
+    rows = cursor.fetchall()
+    for row in rows:
+        k = {}
+        k['fname'] = str(row[0])
+        k['lname'] = str(row[1])
+        k['pet'] = str(row[2])
+        data.append(k)
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return jsonify({"data":data})
 
 
 
