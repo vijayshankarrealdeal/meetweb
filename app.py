@@ -1,10 +1,7 @@
 from flask import Flask, jsonify
 import  requests
-#from werkzeug.exceptions import HTTPException
 from flask_cors import CORS
 import pandas as pd
-#from selenium import webdriver
-#from selenium.webdriver import ChromeOptions
 import os
 
 from db import create_table, insert_data, read_data
