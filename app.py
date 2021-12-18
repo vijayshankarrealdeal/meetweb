@@ -29,7 +29,10 @@ class Student(db.Model):
         self.fname = fname
         self.lname =lname
         self.pet = pet
- 
+try:
+    db.create_all()
+except: 
+    pass
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
     student = Student(fname,lname,pet)
