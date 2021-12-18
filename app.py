@@ -15,7 +15,7 @@ username = "ncgfeatlso"
 host_name = "meetwebflask-server.postgres.database.azure.com/postgres?sslmode=require"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{username}:{password}@{host_name}/students'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{username}:{password}@{host_name}'
 
 # 'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname=postgres user=ncgfeatlso password=Google@990 sslmode=require'
 db = SQLAlchemy(app)
