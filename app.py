@@ -10,9 +10,9 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 app = Flask(__name__)
 CORS(app)
-
+password = "Google@990"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://ncgfeatlso:Google@990@meetwebflask-server.postgres.database.azure.com/postgres?sslmode=require"
+app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://ncgfeatlso:{password}@meetwebflask-server.postgres.database.azure.com/postgres?sslmode=require'
 
 # 'host=meetwebflask-server.postgres.database.azure.com port=5432 dbname=postgres user=ncgfeatlso password=Google@990 sslmode=require'
 db = SQLAlchemy(app)
