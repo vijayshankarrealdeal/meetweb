@@ -92,7 +92,7 @@ def get_request():
 
 @app.route('/api/get-message', methods=['GET'])
 def getMessage():
-    data = {'message': 'Hello World!'}
+    data = {'message': 'Hello World Again ss'}
     return jsonify(data)
 
 
