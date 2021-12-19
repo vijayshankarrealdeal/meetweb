@@ -28,14 +28,14 @@ def genrate_token(key):
     token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'],'HS256')
     return token
 
-@app.route('/api/userreg/<string:email>/<string:password1>/<string:password2>',methods = ["GET","POST"])
-def register(email,password1,password2):
+@app.route('/api/userreg/<string:email>/<string:password1>',methods = ["GET","POST"])
+def register(email,password1):
     conn = sqlite3.connect("user.db")
     rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
     for data in rows:
         if  email in data[2]: 
          return jsonify({"error":"user exits"})
-    if(re.fullmatch(regex, email) and (password1 == password2)):   
+    if(re.fullmatch(regex, email) and (len(password1) > 6 )):   
         cursor = conn.cursor()
         id = str(uuid.uuid1())
         token = genrate_token(id)
