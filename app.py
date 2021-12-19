@@ -8,91 +8,70 @@ from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+import psycopg2
 
-from db import create_table, insert_data, read_data
+
 app = Flask(__name__)
 CORS(app)
+
+#conn
+
+host = "flight.postgres.database.azure.com port = 5432"
+dbname = "users"
+user = "flight"
+password = "Google@99"
+sslmode = "require"
+conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
+
 @app.route('/api/createdb', methods=['GET'])
 def createTable():
-    data = create_table()
-    return jsonify({"data":data})
+    conn = psycopg2.connect(conn_string) 
+    cursor = conn.cursor()
+    try:
+        cursor.execute("CREATE TABLE student (id serial PRIMARY KEY, fname VARCHAR(50), lname VARCHAR(50),pet VARCHAR(50));")
+        conn.commit()
+        cursor.close()
+        return jsonify({"data":"Success"})
+    except Exception as e:
+        conn.close()
+        return jsonify({"data":str(e)})
+    
 
 
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
-    status = insert_data(fname,lname,pet)
-    return jsonify({"status":status})
+    conn = psycopg2.connect(conn_string) 
+    cursor = conn.cursor()
+    try:
+        cursor.execute("INSERT INTO inventory (fname, lname,pet) VALUES (%s, %s,%s);", (fname, lname,pet))
+        conn.commit()
+        cursor.close()
+        return jsonify({"status":"Success"})
+    except Exception as e:
+        conn.close()
+        return jsonify({"status": str(e)})
+    
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
-    data = read_data()
-    return jsonify({"data":data})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    conn = psycopg2.connect(conn_string) 
+    cursor = conn.cursor()
+    try:
+        data = []
+        rows = cursor.fetchall()
+        for row in rows:
+            k = {}
+            k['fname'] = str(row[0])
+            k['lname'] = str(row[1])
+            k['pet'] = str(row[2])
+            data.append(k)
+        conn.commit()
+        cursor.close()
+        return jsonify({"data":data})
+    except Exception as e:
+        conn.close()
+        return jsonify({"data":str(e)})
+    
 
 
 @app.route('/api/get-message', methods=['GET'])
