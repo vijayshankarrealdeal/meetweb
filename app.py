@@ -38,7 +38,7 @@ def register(email,password1,password2):
     if(re.fullmatch(regex, email) and (password1 == password2)):   
         cursor = conn.cursor()
         id = str(uuid.uuid1())
-        token = 'df'
+        token = ''
         # genrate_token(id)
         cursor.execute("""INSERT INTO USERS(ID,TOKEN ,EMAIL, PASSWORD) 
            VALUES (\"%s\",\"%s\",\"%s\",\"%s\")""" % (id, token,email, password1))
