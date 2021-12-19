@@ -24,7 +24,7 @@ CORS(app)
 # except:
 #     pass
 
-# app.config['SECRET_KEY']= app_key()
+# app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
 # def genrate_token(key):
 #     token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'], "HS256")
