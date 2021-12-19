@@ -5,98 +5,97 @@ from flask_cors import CORS
 import pandas as pd
 from time import sleep 
 from selenium import webdriver
-#import sqlite3
-#import datetime
-#from appsecrt_key import app_key
-# import jwt
-# import uuid
-# import re
+import sqlite3
+import datetime
+import jwt
+import uuid
+import re
 
-#regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 app = Flask(__name__)
 CORS(app)
 
-# try:
-#     conn = sqlite3.connect("user.db")
-#     cursor = conn.cursor()
-#     cursor.execute('''CREATE TABLE USERS (ID TEXT PRIMARY KEY NOT NULL,TOKEN TEXT  NOT NULL ,EMAIL  TEXT  NOT NULL, PASSWORD  TEXT NOT NULL)''')
+try:
+    conn = sqlite3.connect("user.db")
+    cursor = conn.cursor()
+    cursor.execute('''CREATE TABLE USERS (ID TEXT PRIMARY KEY NOT NULL,TOKEN TEXT  NOT NULL ,EMAIL  TEXT  NOT NULL, PASSWORD  TEXT NOT NULL)''')
 
-# except:
-#     pass
+except:
+    pass
 
-# app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
+app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
-# def genrate_token(key):
-#     token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'], "HS256")
-#     return token
+def genrate_token(key):
+    token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'], "HS256")
+    return token
 
-# @app.route('/api/userreg/<string:email>/<string:password1>/<string:password2>',methods = ["GET","POST"])
-# def register(email,password1,password2):
-#     conn = sqlite3.connect("user.db")
-#     rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
-#     for data in rows:
-#         if  email in data[2]: 
-#          return jsonify({"error":"user exits"})
-#     if(re.fullmatch(regex, email) and (password1 == password2)):   
-#         cursor = conn.cursor()
-#         id = str(uuid.uuid1())
-#         token = genrate_token(id)
-#         cursor.execute("""INSERT INTO USERS(ID,TOKEN ,EMAIL, PASSWORD) 
-#            VALUES (\"%s\",\"%s\",\"%s\",\"%s\")""" % (id, token,email, password1))
-#         conn.commit()
-#         return jsonify({'token':token,"userId":id})
-#     else:
-#         return jsonify({"data":'Invalid Email or Password'})
-
-
-# @app.route('/api/refresh_token/<string:token>/<string:uid>',methods=["GET","POST"])
-# def refresh_token(token,uid):
-#     conn = sqlite3.connect("user.db")
-#     cursor = conn.cursor()
-
-#     try:
-#         tmp_token = jwt.decode(token,app.config['SECRET_KEY'], algorithms=["HS256"])  
-#         return jsonify({"token":token})
-#     except Exception as e:
-#         rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
-#         rows[0]
-#         new_token = genrate_token(uid)
-#         cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
-
-#         return jsonify({"token":new_token})
-
-# @app.route('/api/login/<string:email>/<string:password>')
-# def login(email,password):
-#     conn = sqlite3.connect("user.db")
-#     cursor = conn.cursor()
-#     rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
-#     db_password = rows[0][3]
-#     db_uid = rows[0][1]
-#     if(db_password == password): 
-#         token = genrate_token(db_uid)
-#         cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(token, db_uid))
-#         return jsonify({'token':token,"userId":db_uid})
-#     else:
-#         return jsonify({'error':"Invalid Password"})
+@app.route('/api/userreg/<string:email>/<string:password1>/<string:password2>',methods = ["GET","POST"])
+def register(email,password1,password2):
+    conn = sqlite3.connect("user.db")
+    rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
+    for data in rows:
+        if  email in data[2]: 
+         return jsonify({"error":"user exits"})
+    if(re.fullmatch(regex, email) and (password1 == password2)):   
+        cursor = conn.cursor()
+        id = str(uuid.uuid1())
+        token = genrate_token(id)
+        cursor.execute("""INSERT INTO USERS(ID,TOKEN ,EMAIL, PASSWORD) 
+           VALUES (\"%s\",\"%s\",\"%s\",\"%s\")""" % (id, token,email, password1))
+        conn.commit()
+        return jsonify({'token':token,"userId":id})
+    else:
+        return jsonify({"data":'Invalid Email or Password'})
 
 
-# @app.route('/api/get_data',methods = ["GET"])
-# def get_request():
-#     conn = sqlite3.connect("user.db") 
-#     try:
-#         data = []
-#         rows =  conn.execute("SELECT ID, EMAIL, PASSWORD from USERS")
-#         for row in rows:
-#             k = {}
-#             k['id'] = str(row[0])
-#             k['email'] = str(row[1])
-#             k['password'] = str(row[2])
-#             data.append(k)
-#         conn.close()
-#         return jsonify({"data":data})
-#     except Exception as e:
-#         conn.close()
-#         return jsonify({"data":str(e)})
+@app.route('/api/refresh_token/<string:token>/<string:uid>',methods=["GET","POST"])
+def refresh_token(token,uid):
+    conn = sqlite3.connect("user.db")
+    cursor = conn.cursor()
+
+    try:
+        tmp_token = jwt.decode(token,app.config['SECRET_KEY'], algorithms=["HS256"])  
+        return jsonify({"token":token})
+    except Exception as e:
+        rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
+        rows[0]
+        new_token = genrate_token(uid)
+        cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
+
+        return jsonify({"token":new_token})
+
+@app.route('/api/login/<string:email>/<string:password>')
+def login(email,password):
+    conn = sqlite3.connect("user.db")
+    cursor = conn.cursor()
+    rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
+    db_password = rows[0][3]
+    db_uid = rows[0][1]
+    if(db_password == password): 
+        token = genrate_token(db_uid)
+        cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(token, db_uid))
+        return jsonify({'token':token,"userId":db_uid})
+    else:
+        return jsonify({'error':"Invalid Password"})
+
+
+@app.route('/api/get_data',methods = ["GET"])
+def get_request():
+    conn = sqlite3.connect("user.db") 
+    try:
+        data = []
+        rows =  conn.execute("SELECT ID, EMAIL, PASSWORD from USERS")
+        for row in rows:
+            k = {}
+            k['id'] = str(row[0])
+            k['email'] = str(row[1])
+            k['password'] = str(row[2])
+            data.append(k)
+        conn.close()
+        return jsonify({"data":data})
+    except Exception as e:
+        conn.close()
+        return jsonify({"data":str(e)})
     
 
 
