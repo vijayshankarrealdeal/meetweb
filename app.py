@@ -160,11 +160,11 @@ def get(type_shop):
 @app.route('/api/getflightstatus',methods=["GET"])
 def get_board():
     try:
-        options = webdriver.ChromeOptions()
+        options = webdriver.FirefoxOptions()
         options.add_argument("--headless")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        driver = webdriver.Edge('./msedgedriver', options=options)
+        driver = webdriver.Firefox('./msedgedriver', options=options)
         driver.maximize_window()
         driver.get('https://www.bangaloreairport.com/kempegowda-departures')
         items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
@@ -182,7 +182,7 @@ def get_board():
             except:
                 pass
         df = pd.DataFrame(data)
-        driver.close()
+        driver.quit()
         data = [df.T.to_dict()[i] for i in df.T.to_dict()]
         return jsonify({"data":data})
     except Exception as e:
