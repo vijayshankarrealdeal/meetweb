@@ -1,4 +1,5 @@
 from flask import Flask, json, jsonify
+from psycopg2 import connect
 import  requests
 from flask_cors import CORS
 import pandas as pd
@@ -8,28 +9,24 @@ from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-import psycopg2
+import sqlite3
 
 
 app = Flask(__name__)
 CORS(app)
 
 #conn
-
-host = "flight.postgres.database.azure.com port = 5432"
-dbname = "users"
-user = "flight"
-password = "Google@99"
-sslmode = "require"
-conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
-
 @app.route('/api/createdb', methods=['GET'])
 def createTable():
-    conn = psycopg2.connect(conn_string) 
+    conn = sqlite3.connect("user.db") 
     cursor = conn.cursor()
     try:
-        cursor.execute("CREATE TABLE student (id serial PRIMARY KEY, fname VARCHAR(50), lname VARCHAR(50),pet VARCHAR(50));")
-        conn.commit()
+        conn.execute('''CREATE TABLE COMPANY
+         (ID INT PRIMARY KEY     NOT NULL,
+         NAME           TEXT    NOT NULL,
+         AGE            INT     NOT NULL,
+         ADDRESS        CHAR(50),
+         SALARY         REAL);''')
         cursor.close()
         return jsonify({"data":"Success"})
     except Exception as e:
@@ -40,12 +37,14 @@ def createTable():
 
 @app.route('/api/submit/<string:fname>/<string:lname>/<string:pet>',methods = ["GET"])
 def submit(fname,lname,pet):
-    conn = psycopg2.connect(conn_string) 
-    cursor = conn.cursor()
+    conn = sqlite3.connect("user.db") 
     try:
-        cursor.execute("INSERT INTO student (fname, lname,pet) VALUES (%s, %s,%s);", (fname, lname,pet))
+        conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) VALUES (1, 'Paul', 32, 'California', 20000.00 )")
+        conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) VALUES (2, 'Allen', 25, 'Texas', 15000.00 )")
+        conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) VALUES (3, 'Teddy', 23, 'Norway', 20000.00 )")
+        conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 )")
         conn.commit()
-        cursor.close()
+        conn.close()
         return jsonify({"status":"Success"})
     except Exception as e:
         conn.close()
@@ -54,19 +53,18 @@ def submit(fname,lname,pet):
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
-    conn = psycopg2.connect(conn_string) 
-    cursor = conn.cursor()
+    conn = sqlite3.connect("user.db") 
     try:
         data = []
-        rows = cursor.fetchall()
+        rows =  conn.execute("SELECT id, name, address, salary from COMPANY")
         for row in rows:
             k = {}
-            k['fname'] = str(row[0])
-            k['lname'] = str(row[1])
-            k['pet'] = str(row[2])
+            k['id'] = str(row[0])
+            k['name'] = str(row[1])
+            k['address'] = str(row[2])
+            k['salary'] = str(row[3])
             data.append(k)
-        conn.commit()
-        cursor.close()
+        conn.close()
         return jsonify({"data":data})
     except Exception as e:
         conn.close()
