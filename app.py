@@ -164,7 +164,7 @@ def get_board():
         options.add_argument("--headless")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        driver = webdriver.Chrome('./chromedriver', options=options)
+        driver = webdriver.Edge('./msedgedriver', options=options)
         driver.maximize_window()
         driver.get('https://www.bangaloreairport.com/kempegowda-departures')
         items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
@@ -186,6 +186,7 @@ def get_board():
         data = [df.T.to_dict()[i] for i in df.T.to_dict()]
         return jsonify({"data":data})
     except Exception as e:
+    
         return jsonify({"data":str(e)})
 ##-----------------------------------------------------##
 #########################################################
