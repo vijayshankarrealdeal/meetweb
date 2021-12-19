@@ -1,5 +1,4 @@
 from flask import Flask, jsonify
-#from flask import request
 import  requests
 from flask_cors import CORS
 import pandas as pd
