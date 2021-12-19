@@ -1,8 +1,8 @@
 import psycopg2
 
 
-host = "flight.postgres.database.azure.com"
-dbname = "postgres"
+host = "flight.postgres.database.azure.com port = 5432"
+dbname = "users"
 user = "flight"
 password = "Google@99"
 sslmode = "require"
