@@ -43,7 +43,7 @@ def submit(fname,lname,pet):
     conn = psycopg2.connect(conn_string) 
     cursor = conn.cursor()
     try:
-        cursor.execute("INSERT INTO inventory (fname, lname,pet) VALUES (%s, %s,%s);", (fname, lname,pet))
+        cursor.execute("INSERT INTO student (fname, lname,pet) VALUES (%s, %s,%s);", (fname, lname,pet))
         conn.commit()
         cursor.close()
         return jsonify({"status":"Success"})
