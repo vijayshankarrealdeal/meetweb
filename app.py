@@ -1,4 +1,5 @@
-from flask import Flask, jsonify,request
+from flask import Flask, jsonify
+#from flask import request
 import  requests
 from flask_cors import CORS
 import pandas as pd
@@ -6,7 +7,7 @@ from time import sleep
 from selenium import webdriver
 #import sqlite3
 #import datetime
-from appsecrt_key import app_key
+#from appsecrt_key import app_key
 # import jwt
 # import uuid
 # import re
