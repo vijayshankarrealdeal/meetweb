@@ -6,14 +6,14 @@ from time import sleep
 from selenium import webdriver
 import sqlite3
 import datetime
-from jwt import jwt
+from jwt import JWT
 import uuid
 import re
 
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 app = Flask(__name__)
 CORS(app)
-
+jwt_keys = JWT()
 try:
     conn = sqlite3.connect("user.db",check_same_thread=False)
     cursor = conn.cursor()
@@ -26,7 +26,7 @@ app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
 def genrate_token(key):
 
-    token = jwt.JWT.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'])
+    token = jwt_keys.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'])
     return token
 
 @app.route('/api/userreg/<string:email>/<string:password1>/<string:password2>',methods = ["GET","POST"])
@@ -54,7 +54,7 @@ def refresh_token(token,uid):
     cursor = conn.cursor()
 
     try:
-        tmp_token = jwt.JWT.decode(token,app.config['SECRET_KEY'])  
+        tmp_token = jwt_keys.decode(token,app.config['SECRET_KEY'])  
         return jsonify({"token":token})
     except Exception as e:
         rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
