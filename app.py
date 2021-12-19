@@ -21,7 +21,6 @@ def genrate_token(key):
     token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'], "HS256")
     return token
 
-
 @app.route('/api/user_reg/<string:email>/<string:password1>/<string:password2>',methods = ["GET","POST"])
 def register(email,password,password1):
     if(re.fullmatch(regex, email) == False):
