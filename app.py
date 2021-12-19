@@ -6,7 +6,7 @@ from time import sleep
 from selenium import webdriver
 import sqlite3
 import datetime
-# import jwt
+import jwt
 import uuid
 import re
 
@@ -24,9 +24,9 @@ except:
 
 app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
-# def genrate_token(key):
-#     token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'], "HS256")
-#     return token
+def genrate_token(key):
+    token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'])
+    return token
 
 @app.route('/api/userreg/<string:email>/<string:password1>/<string:password2>',methods = ["GET","POST"])
 def register(email,password1,password2):
@@ -38,8 +38,7 @@ def register(email,password1,password2):
     if(re.fullmatch(regex, email) and (password1 == password2)):   
         cursor = conn.cursor()
         id = str(uuid.uuid1())
-        token = ''
-        # genrate_token(id)
+        token = genrate_token(id)
         cursor.execute("""INSERT INTO USERS(ID,TOKEN ,EMAIL, PASSWORD) 
            VALUES (\"%s\",\"%s\",\"%s\",\"%s\")""" % (id, token,email, password1))
         conn.commit()
@@ -54,13 +53,12 @@ def refresh_token(token,uid):
     cursor = conn.cursor()
 
     try:
-        #tmp_token = jwt.decode(token,app.config['SECRET_KEY'], algorithms=["HS256"])  
+        tmp_token = jwt.decode(token,app.config['SECRET_KEY'])  
         return jsonify({"token":token})
     except Exception as e:
         rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
         rows[0]
-        new_token = 'df'
-        #genrate_token(uid)
+        new_token = genrate_token(uid)
         cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
 
         return jsonify({"token":new_token})
@@ -73,8 +71,7 @@ def login(email,password):
     db_password = rows[0][3]
     db_uid = rows[0][1]
     if(db_password == password): 
-        token = 'df'
-        #dfgenrate_token(db_uid)
+        token = genrate_token(db_uid)
         cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(token, db_uid))
         return jsonify({'token':token,"userId":db_uid})
     else:
