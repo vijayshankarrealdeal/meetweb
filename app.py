@@ -160,11 +160,11 @@ def get(type_shop):
 @app.route('/api/getflightstatus',methods=["GET"])
 def get_board():
     try:
-        options = webdriver.FirefoxOptions()
+        options = webdriver.ChromeOptions()
         options.add_argument("--headless")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        driver = webdriver.Firefox('./usr/bin/geckodriver', options=options)
+        driver = webdriver.Chrome('./chromedriver', options=options)
         driver.maximize_window()
         driver.get('https://www.bangaloreairport.com/kempegowda-departures')
         items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
