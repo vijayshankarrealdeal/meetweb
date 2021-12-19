@@ -1,14 +1,9 @@
 from flask import Flask, json, jsonify
-from psycopg2 import connect
 import  requests
 from flask_cors import CORS
 import pandas as pd
-import os
 from time import sleep 
 from selenium import webdriver
-from selenium.webdriver import ChromeOptions
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 import sqlite3
 
 
