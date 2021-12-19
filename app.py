@@ -4,14 +4,14 @@ from flask_cors import CORS
 import pandas as pd
 from time import sleep 
 from selenium import webdriver
-import sqlite3
-import datetime
+#import sqlite3
+#import datetime
 from appsecrt_key import app_key
-import jwt
-import uuid
-import re
+# import jwt
+# import uuid
+# import re
 
-regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+#regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 app = Flask(__name__)
 CORS(app)
 
