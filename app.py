@@ -49,19 +49,19 @@ def register(email,password1):
 
 @app.route('/api/refresh_token/<string:token>/<string:uid>',methods=["GET","POST"])
 def refresh_token(token,uid):
-    conn = sqlite3.connect("user.db")
-    cursor = conn.cursor()
-
-    try:
-        tmp_token = jwt.decode(token,app.config['SECRET_KEY'],algorithms=['HS256'])  
-        return jsonify({"token":token})
-    except Exception as e:
-        rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
-        rows[0]
-        new_token = genrate_token(uid)
-        cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
-
-        return jsonify({"token":new_token})
+    if len(uid) != 0:
+        conn = sqlite3.connect("user.db")
+        cursor = conn.cursor()
+        try:
+            tmp_token = jwt.decode(token,app.config['SECRET_KEY'],algorithms=['HS256'])  
+            return jsonify({"token":token})
+        except Exception as e:
+            rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
+            rows[0]
+            new_token = genrate_token(uid)
+            cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
+            return jsonify({"token":new_token,"uid":uid})
+    return jsonify({"token":'error'})
 
 @app.route('/api/login/<string:email>/<string:password>')
 def login(email,password):
