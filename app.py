@@ -164,7 +164,7 @@ def get_board():
         options.add_argument("--headless")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        driver = webdriver.Firefox('geckodriver', options=options)
+        driver = webdriver.Firefox('./usr/bin/geckodriver', options=options)
         driver.maximize_window()
         driver.get('https://www.bangaloreairport.com/kempegowda-departures')
         items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
