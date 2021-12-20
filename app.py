@@ -209,7 +209,6 @@ def get_flights(orgin, destination, date, adults, children, infants):
         driver = webdriver.Chrome('./chromedriver', options=options)
         driver.maximize_window()
         driver.get(url)
-        sleep(2)
         total_items = []
         pages = driver.find_element_by_class_name('c-pagination') 
         all_pages = pages.find_elements_by_xpath('.//span[@class = "page-num"]')
@@ -252,7 +251,6 @@ def get_flights(orgin, destination, date, adults, children, infants):
                 k['flight_price'] = flight_price
                 k['discount_credit'] = discount_credit
                 total_items.append(k)
-            sleep(2)
             page.click()
         data = pd.DataFrame(total_items)
         driver.close()
