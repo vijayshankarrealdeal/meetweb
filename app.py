@@ -259,7 +259,20 @@ def get_flights(orgin, destination, date, adults, children, infants):
         driver.close()
         return jsonify({"data":[data.T.to_dict()[i] for i in data.T.to_dict()]})
     except Exception as e:
-        return jsonify({"error":e})
+        def get_date(x):
+            return datetime.fromisoformat(x).strftime('%a, %d %b')
+        df = df = pd.read_csv(f'{orgin}-{destination}.csv', index_col=0)
+        df.orgin_date = [get_date(date) for i in df.orgin_date]
+        for i in range(len(df.dest_date) -1):
+            k = int(df.dest_date[i].split(' ')[1])
+            p = int(df.dest_date[i + 1].split(' ')[1])
+            if p != k:
+                string_ =  date.split('-')
+                st = str(string_[0]) + '-' + str(string_[1]) + '-' + str(int(string_[2]) + 1)
+                df.dest_date[i] = get_date(st)
+            else:
+                df.dest_date[i] = get_date(date)
+        return jsonify({"data":[df.T.to_dict()[i] for i in df.T.to_dict()]})
 
 
 app.config["DEBUG"] = True

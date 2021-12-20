@@ -1,0 +1,61 @@
+,fight_img,fight_name,orgin_code,orgin_date,orgin_time,orgin_city,dest_code,dest_date,dest_time,dest_city,duration_of_flight,duration_stops,flight_price,discount_credit
+0,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",17:05,Bengaluru,CCU,"Thu, 23 Dec",19:45,Kolkata,2hr 40min,non-stop,3850,₹600 Instant Off
+1,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",06:30,Bengaluru,CCU,"Thu, 23 Dec",09:00,Kolkata,2hr 30min,non-stop,4178,₹600 Instant Off
+2,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",21:45,Bengaluru,CCU,"Fri, 24 Dec",00:10,Kolkata,2hr 25min,non-stop,4548,₹600 Instant Off
+3,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",20:05,Bengaluru,CCU,"Thu, 23 Dec",22:45,Kolkata,2hr 40min,non-stop,4548,₹600 Instant Off
+4,https://images.ixigo.com/img/common-resources/airline-new/SG.png,SPICEJET,BLR,"Thu, 23 Dec",05:55,Bengaluru,CCU,"Thu, 23 Dec",08:30,Kolkata,2hr 35min,non-stop,4646,₹605 Instant Off
+5,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",18:30,Bengaluru,CCU,"Thu, 23 Dec",21:05,Kolkata,2hr 35min,non-stop,5000,₹600 Instant Off
+6,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",20:25,Bengaluru,CCU,"Thu, 23 Dec",22:45,Kolkata,2hr 20min,non-stop,5003,₹600 Instant Off
+7,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",11:30,Bengaluru,CCU,"Thu, 23 Dec",14:00,Kolkata,2hr 30min,non-stop,5003,₹600 Instant Off
+8,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",23:10,Bengaluru,CCU,"Fri, 24 Dec",01:35,Kolkata,2hr 25min,non-stop,5050,₹600 Instant Off
+9,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",23:25,Bengaluru,CCU,"Fri, 24 Dec",01:55,Kolkata,2hr 30min,non-stop,5178,₹600 Instant Off
+10,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",03:30,Bengaluru,CCU,"Thu, 23 Dec",06:10,Kolkata,2hr 40min,non-stop,5178,₹600 Instant Off
+11,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",18:00,Bengaluru,CCU,"Thu, 23 Dec",20:40,Kolkata,2hr 40min,non-stop,5178,₹600 Instant Off
+12,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",02:40,Bengaluru,CCU,"Thu, 23 Dec",05:15,Kolkata,2hr 35min,non-stop,5179,₹600 Instant Off
+13,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",15:15,Bengaluru,CCU,"Thu, 23 Dec",17:45,Kolkata,2hr 30min,non-stop,5410,₹600 Instant Off
+14,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",06:35,Bengaluru,CCU,"Thu, 23 Dec",09:15,Kolkata,2hr 40min,non-stop,5410,₹600 Instant Off
+15,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",07:35,Bengaluru,CCU,"Thu, 23 Dec",12:55,Kolkata,5hr 20min,1 stop,5176,₹600 Instant Off
+16,https://images.ixigo.com/img/common-resources/airline-new/SG.png,SPICEJET,BLR,"Thu, 23 Dec",17:25,Bengaluru,CCU,"Thu, 23 Dec",19:55,Kolkata,2hr 30min,non-stop,5493,₹600 Instant Off
+17,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",19:25,Bengaluru,CCU,"Fri, 24 Dec",07:10,Kolkata,11hr 45min,1 stop,5176,₹600 Instant Off
+18,https://images.ixigo.com/img/common-resources/airline-new/SG.png,SPICEJET,BLR,"Thu, 23 Dec",06:55,Bengaluru,CCU,"Thu, 23 Dec",21:00,Kolkata,14hr 5min,1 stop,5176,₹600 Instant Off
+19,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",17:30,Bengaluru,CCU,"Fri, 24 Dec",08:25,Kolkata,14hr 55min,1 stop,5176,₹600 Instant Off
+20,https://images.ixigo.com/img/common-resources/airline-new/SG.png,SPICEJET,BLR,"Thu, 23 Dec",05:40,Bengaluru,CCU,"Thu, 23 Dec",20:50,Kolkata,15hr 10min,1 stop,5176,₹600 Instant Off
+21,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",11:05,Bengaluru,CCU,"Thu, 23 Dec",13:30,Kolkata,2hr 25min,non-stop,5809,₹600 Instant Off
+22,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",16:15,Bengaluru,CCU,"Fri, 24 Dec",08:25,Kolkata,16hr 10min,2 stops,5176,₹600 Instant Off
+23,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",15:45,Bengaluru,CCU,"Thu, 23 Dec",22:00,Kolkata,6hr 15min,1 stop,5636,₹600 Instant Off
+24,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",14:50,Bengaluru,CCU,"Thu, 23 Dec",22:00,Kolkata,7hr 10min,1 stop,5636,₹600 Instant Off
+25,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",08:40,Bengaluru,CCU,"Thu, 23 Dec",11:20,Kolkata,2hr 40min,non-stop,6225,₹600 Instant Off
+26,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",17:20,Bengaluru,CCU,"Thu, 23 Dec",22:25,Kolkata,5hr 5min,1 stop,6095,₹600 Instant Off
+27,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",07:10,Bengaluru,CCU,"Thu, 23 Dec",13:20,Kolkata,6hr 10min,1 stop,6095,₹600 Instant Off
+28,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",06:10,Bengaluru,CCU,"Thu, 23 Dec",13:20,Kolkata,7hr 10min,1 stop,6095,₹600 Instant Off
+29,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",15:45,Bengaluru,CCU,"Thu, 23 Dec",23:15,Kolkata,7hr 30min,1 stop,6095,₹600 Instant Off
+30,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",14:50,Bengaluru,CCU,"Thu, 23 Dec",23:15,Kolkata,8hr 25min,1 stop,6095,₹600 Instant Off
+31,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",13:15,Bengaluru,CCU,"Thu, 23 Dec",15:50,Kolkata,2hr 35min,non-stop,6753,₹600 Instant Off
+32,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",11:45,Bengaluru,CCU,"Thu, 23 Dec",14:25,Kolkata,2hr 40min,non-stop,6753,₹600 Instant Off
+33,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",14:50,Bengaluru,CCU,"Thu, 23 Dec",20:15,Kolkata,5hr 25min,1 stop,6555,₹600 Instant Off
+34,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",23:45,Bengaluru,CCU,"Fri, 24 Dec",06:05,Kolkata,6hr 20min,1 stop,6555,₹600 Instant Off
+35,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",21:55,Bengaluru,CCU,"Fri, 24 Dec",06:05,Kolkata,8hr 10min,1 stop,6555,₹600 Instant Off
+36,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",23:45,Bengaluru,CCU,"Fri, 24 Dec",07:55,Kolkata,8hr 10min,1 stop,6555,₹600 Instant Off
+37,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",08:30,Bengaluru,CCU,"Thu, 23 Dec",17:25,Kolkata,8hr 55min,1 stop,6555,₹600 Instant Off
+38,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",10:55,Bengaluru,CCU,"Thu, 23 Dec",20:15,Kolkata,9hr 20min,1 stop,7013,₹600 Instant Off
+39,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",22:10,Bengaluru,CCU,"Fri, 24 Dec",07:10,Kolkata,9hr,1 stop,7258,₹600 Instant Off
+40,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",16:15,Bengaluru,CCU,"Fri, 24 Dec",02:15,Kolkata,10hr,1 stop,7258,₹600 Instant Off
+41,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",15:35,Bengaluru,CCU,"Fri, 24 Dec",02:15,Kolkata,10hr 40min,1 stop,7345,₹600 Instant Off
+42,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",22:55,Bengaluru,CCU,"Fri, 24 Dec",08:15,Kolkata,9hr 20min,1 stop,7473,₹600 Instant Off
+43,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",12:50,Bengaluru,CCU,"Thu, 23 Dec",23:10,Kolkata,10hr 20min,2 stops,7258,₹600 Instant Off
+44,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",18:15,Bengaluru,CCU,"Thu, 23 Dec",23:15,Kolkata,5hr,1 stop,8392,₹600 Instant Off
+45,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",08:00,Bengaluru,CCU,"Thu, 23 Dec",17:00,Kolkata,9hr,2 stops,8392,₹600 Instant Off
+46,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",11:20,Bengaluru,CCU,"Thu, 23 Dec",23:10,Kolkata,11hr 50min,1 stop,8546,₹600 Instant Off
+47,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",22:55,Bengaluru,CCU,"Fri, 24 Dec",07:15,Kolkata,8hr 20min,1 stop,8852,₹600 Instant Off
+48,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",13:05,Bengaluru,CCU,"Thu, 23 Dec",21:50,Kolkata,8hr 45min,1 stop,8852,₹600 Instant Off
+49,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",13:05,Bengaluru,CCU,"Thu, 23 Dec",19:40,Kolkata,6hr 35min,1 stop,9311,₹600 Instant Off
+50,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",05:10,Bengaluru,CCU,"Thu, 23 Dec",12:00,Kolkata,6hr 50min,1 stop,9860,₹600 Instant Off
+51,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",00:10,Bengaluru,CCU,"Thu, 23 Dec",07:10,Kolkata,7hr,1 stop,9860,₹600 Instant Off
+52,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",06:25,Bengaluru,CCU,"Thu, 23 Dec",19:15,Kolkata,12hr 50min,1 stop,9860,₹600 Instant Off
+53,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",14:55,Bengaluru,CCU,"Thu, 23 Dec",22:55,Kolkata,8hr,1 stop,10231,₹600 Instant Off
+54,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",11:20,Bengaluru,CCU,"Thu, 23 Dec",19:30,Kolkata,8hr 10min,1 stop,10933,₹600 Instant Off
+55,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",16:20,Bengaluru,CCU,"Thu, 23 Dec",22:40,Kolkata,6hr 20min,1 stop,11111,₹600 Instant Off
+56,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",18:50,Bengaluru,CCU,"Fri, 24 Dec",08:40,Kolkata,13hr 50min,1 stop,11041,₹810 Instant Off
+57,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",21:10,Bengaluru,CCU,"Fri, 24 Dec",08:35,Kolkata,11hr 25min,1 stop,11205,₹605 Instant Off
+58,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",18:50,Bengaluru,CCU,"Fri, 24 Dec",08:35,Kolkata,13hr 45min,1 stop,11205,₹605 Instant Off
+59,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",13:05,Bengaluru,CCU,"Thu, 23 Dec",19:15,Kolkata,6hr 10min,1 stop,11426,₹600 Instant Off

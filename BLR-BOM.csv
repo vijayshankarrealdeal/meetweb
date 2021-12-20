@@ -1,0 +1,61 @@
+,fight_img,fight_name,orgin_code,orgin_date,orgin_time,orgin_city,dest_code,dest_date,dest_time,dest_city,duration_of_flight,duration_stops,flight_price,discount_credit
+0,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",04:30,Bengaluru,BOM,"Thu, 23 Dec",06:10,Mumbai,1hr 40min,non-stop,4980,₹600 Instant Off
+1,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",06:30,Bengaluru,BOM,"Thu, 23 Dec",08:05,Mumbai,1hr 35min,non-stop,5003,₹600 Instant Off
+2,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",08:10,Bengaluru,BOM,"Thu, 23 Dec",09:50,Mumbai,1hr 40min,non-stop,5003,₹800 Instant Off
+3,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",05:35,Bengaluru,BOM,"Thu, 23 Dec",07:15,Mumbai,1hr 40min,non-stop,5100,₹600 Instant Off
+4,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",06:40,Bengaluru,BOM,"Thu, 23 Dec",08:15,Mumbai,1hr 35min,non-stop,5284,₹600 Instant Off
+5,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",09:40,Bengaluru,BOM,"Thu, 23 Dec",14:45,Mumbai,5hr 5min,1 stop,5178,₹600 Instant Off
+6,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",06:10,Bengaluru,BOM,"Thu, 23 Dec",12:15,Mumbai,6hr 5min,1 stop,5178,₹600 Instant Off
+7,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",23:45,Bengaluru,BOM,"Fri, 24 Dec",05:50,Mumbai,6hr 5min,1 stop,5178,₹600 Instant Off
+8,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",22:10,Bengaluru,BOM,"Fri, 24 Dec",06:35,Mumbai,8hr 25min,1 stop,5155,₹600 Instant Off
+9,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",07:20,Bengaluru,BOM,"Thu, 23 Dec",14:45,Mumbai,7hr 25min,1 stop,5178,₹600 Instant Off
+10,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",08:30,Bengaluru,BOM,"Thu, 23 Dec",10:15,Mumbai,1hr 45min,non-stop,5494,₹600 Instant Off
+11,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",21:55,Bengaluru,BOM,"Fri, 24 Dec",05:50,Mumbai,7hr 55min,1 stop,5178,₹600 Instant Off
+12,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",23:45,Bengaluru,BOM,"Fri, 24 Dec",07:45,Mumbai,8hr,1 stop,5178,₹600 Instant Off
+13,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",07:00,Bengaluru,BOM,"Thu, 23 Dec",08:50,Mumbai,1hr 50min,non-stop,5546,₹600 Instant Off
+14,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",22:35,Bengaluru,BOM,"Fri, 24 Dec",00:35,Mumbai,2hr,non-stop,5700,₹600 Instant Off
+15,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",21:40,Bengaluru,BOM,"Thu, 23 Dec",23:25,Mumbai,1hr 45min,non-stop,5757,₹600 Instant Off
+16,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",08:05,Bengaluru,BOM,"Thu, 23 Dec",09:55,Mumbai,1hr 50min,non-stop,5913,₹600 Instant Off
+17,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",22:40,Bengaluru,BOM,"Fri, 24 Dec",00:35,Mumbai,1hr 55min,non-stop,6123,₹600 Instant Off
+18,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",10:30,Bengaluru,BOM,"Thu, 23 Dec",12:25,Mumbai,1hr 55min,non-stop,6333,₹600 Instant Off
+19,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",21:15,Bengaluru,BOM,"Thu, 23 Dec",23:15,Mumbai,2hr,non-stop,6333,₹600 Instant Off
+20,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",07:20,Bengaluru,BOM,"Thu, 23 Dec",11:35,Mumbai,4hr 15min,1 stop,6092,₹600 Instant Off
+21,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",07:10,Bengaluru,BOM,"Thu, 23 Dec",12:15,Mumbai,5hr 5min,1 stop,6092,₹600 Instant Off
+22,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",00:40,Bengaluru,BOM,"Thu, 23 Dec",08:10,Mumbai,7hr 30min,1 stop,6092,₹600 Instant Off
+23,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",18:25,Bengaluru,BOM,"Thu, 23 Dec",20:15,Mumbai,1hr 50min,non-stop,6597,₹600 Instant Off
+24,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",09:30,Bengaluru,BOM,"Thu, 23 Dec",11:25,Mumbai,1hr 55min,non-stop,6597,₹600 Instant Off
+25,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,BOM,"Thu, 23 Dec",21:50,Mumbai,1hr 55min,non-stop,6597,₹600 Instant Off
+26,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",18:50,Bengaluru,BOM,"Thu, 23 Dec",20:35,Mumbai,1hr 45min,non-stop,6726,₹600 Instant Off
+27,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",16:50,Bengaluru,BOM,"Thu, 23 Dec",18:35,Mumbai,1hr 45min,non-stop,7110,₹600 Instant Off
+28,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",19:35,Bengaluru,BOM,"Thu, 23 Dec",21:35,Mumbai,2hr,non-stop,7110,₹600 Instant Off
+29,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:00,Bengaluru,BOM,"Thu, 23 Dec",20:45,Mumbai,1hr 45min,non-stop,7122,₹600 Instant Off
+30,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",20:00,Bengaluru,BOM,"Thu, 23 Dec",21:50,Mumbai,1hr 50min,non-stop,7277,₹600 Instant Off
+31,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",19:50,Bengaluru,BOM,"Fri, 24 Dec",00:40,Mumbai,4hr 50min,1 stop,7005,₹600 Instant Off
+32,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",19:50,Bengaluru,BOM,"Fri, 24 Dec",02:55,Mumbai,7hr 5min,1 stop,7005,₹600 Instant Off
+33,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",06:05,Bengaluru,BOM,"Thu, 23 Dec",13:45,Mumbai,7hr 40min,1 stop,7005,₹600 Instant Off
+34,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",18:00,Bengaluru,BOM,"Thu, 23 Dec",19:50,Mumbai,1hr 50min,non-stop,7593,₹600 Instant Off
+35,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",19:25,Bengaluru,BOM,"Fri, 24 Dec",06:35,Mumbai,11hr 10min,1 stop,7381,₹600 Instant Off
+36,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",10:15,Bengaluru,BOM,"Thu, 23 Dec",16:35,Mumbai,6hr 20min,1 stop,7462,₹600 Instant Off
+37,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",12:40,Bengaluru,BOM,"Thu, 23 Dec",14:30,Mumbai,1hr 50min,non-stop,8013,₹600 Instant Off
+38,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",17:10,Bengaluru,BOM,"Fri, 24 Dec",00:40,Mumbai,7hr 30min,1 stop,7919,₹600 Instant Off
+39,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",21:30,Bengaluru,BOM,"Fri, 24 Dec",05:35,Mumbai,8hr 5min,1 stop,8100,₹600 Instant Off
+40,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",20:45,Bengaluru,BOM,"Fri, 24 Dec",05:35,Mumbai,8hr 50min,1 stop,8100,₹600 Instant Off
+41,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",21:30,Bengaluru,BOM,"Fri, 24 Dec",07:40,Mumbai,10hr 10min,1 stop,8100,₹600 Instant Off
+42,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",20:45,Bengaluru,BOM,"Fri, 24 Dec",07:40,Mumbai,10hr 55min,1 stop,8100,₹600 Instant Off
+43,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",12:55,Bengaluru,BOM,"Thu, 23 Dec",19:35,Mumbai,6hr 40min,1 stop,8224,₹600 Instant Off
+44,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",09:20,Bengaluru,BOM,"Thu, 23 Dec",16:35,Mumbai,7hr 15min,1 stop,8375,₹600 Instant Off
+45,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,BOM,"Fri, 24 Dec",10:00,Mumbai,14hr 5min,1 stop,8434,₹600 Instant Off
+46,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",15:45,Bengaluru,BOM,"Thu, 23 Dec",19:40,Mumbai,3hr 55min,1 stop,8946,₹600 Instant Off
+47,https://images.ixigo.com/img/common-resources/airline-new/G8.png,GO FIRST,BLR,"Thu, 23 Dec",15:45,Bengaluru,BOM,"Fri, 24 Dec",01:20,Mumbai,9hr 35min,1 stop,8946,₹600 Instant Off
+48,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,BOM,"Fri, 24 Dec",14:30,Mumbai,18hr 35min,1 stop,8959,₹600 Instant Off
+49,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",00:10,Bengaluru,BOM,"Thu, 23 Dec",06:35,Mumbai,6hr 25min,1 stop,9277,₹600 Instant Off
+50,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",06:10,Bengaluru,BOM,"Thu, 23 Dec",12:50,Mumbai,6hr 40min,1 stop,9277,₹600 Instant Off
+51,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",10:25,Bengaluru,BOM,"Thu, 23 Dec",20:00,Mumbai,9hr 35min,1 stop,9277,₹600 Instant Off
+52,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",11:20,Bengaluru,BOM,"Thu, 23 Dec",21:25,Mumbai,10hr 5min,1 stop,9277,₹600 Instant Off
+53,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",10:25,Bengaluru,BOM,"Thu, 23 Dec",21:15,Mumbai,10hr 50min,1 stop,9277,₹600 Instant Off
+54,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",10:25,Bengaluru,BOM,"Thu, 23 Dec",22:10,Mumbai,11hr 45min,1 stop,9277,₹600 Instant Off
+55,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",21:00,Bengaluru,BOM,"Fri, 24 Dec",09:05,Mumbai,12hr 5min,1 stop,9277,₹600 Instant Off
+56,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",21:00,Bengaluru,BOM,"Fri, 24 Dec",10:10,Mumbai,13hr 10min,1 stop,9277,₹600 Instant Off
+57,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",19:20,Bengaluru,BOM,"Thu, 23 Dec",23:25,Mumbai,4hr 5min,1 stop,9378,₹600 Instant Off
+58,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",06:10,Bengaluru,BOM,"Thu, 23 Dec",20:00,Mumbai,13hr 50min,1 stop,9277,₹600 Instant Off
+59,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",05:40,Bengaluru,BOM,"Thu, 23 Dec",19:35,Mumbai,13hr 55min,1 stop,9277,₹600 Instant Off

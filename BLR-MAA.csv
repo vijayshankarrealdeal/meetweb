@@ -1,0 +1,46 @@
+,fight_img,fight_name,orgin_code,orgin_date,orgin_time,orgin_city,dest_code,dest_date,dest_time,dest_city,duration_of_flight,duration_stops,flight_price,discount_credit
+0,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",10:55,Bengaluru,MAA,"Thu, 23 Dec",12:00,Chennai,1hr 5min,non-stop,3057,₹600 Instant Off
+1,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",07:05,Bengaluru,MAA,"Thu, 23 Dec",08:20,Chennai,1hr 15min,non-stop,3057,₹600 Instant Off
+2,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",09:10,Bengaluru,MAA,"Thu, 23 Dec",10:25,Chennai,1hr 15min,non-stop,3057,₹600 Instant Off
+3,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",15:45,Bengaluru,MAA,"Thu, 23 Dec",17:00,Chennai,1hr 15min,non-stop,3057,₹600 Instant Off
+4,https://images.ixigo.com/img/common-resources/airline-new/SG.png,SPICEJET,BLR,"Thu, 23 Dec",05:40,Bengaluru,MAA,"Thu, 23 Dec",07:00,Chennai,1hr 20min,non-stop,3084,₹600 Instant Off
+5,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",15:35,Bengaluru,MAA,"Thu, 23 Dec",16:30,Chennai,55min,non-stop,3499,₹600 Instant Off
+6,https://images.ixigo.com/img/common-resources/airline-new/I5.png,AIRASIA INDIA,BLR,"Thu, 23 Dec",16:15,Bengaluru,MAA,"Thu, 23 Dec",17:25,Chennai,1hr 10min,non-stop,3499,₹600 Instant Off
+7,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",18:15,Bengaluru,MAA,"Thu, 23 Dec",19:15,Chennai,1hr,non-stop,3603,₹600 Instant Off
+8,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",14:50,Bengaluru,MAA,"Thu, 23 Dec",15:55,Chennai,1hr 5min,non-stop,3603,₹600 Instant Off
+9,https://images.ixigo.com/img/common-resources/airline-new/6E.png,INDIGO,BLR,"Thu, 23 Dec",22:55,Bengaluru,MAA,"Thu, 23 Dec",23:45,Chennai,50min,non-stop,3813,₹600 Instant Off
+10,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",18:50,Bengaluru,MAA,"Fri, 24 Dec",08:00,Chennai,13hr 10min,1 stop,9012,₹600 Instant Off
+11,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",07:35,Bengaluru,MAA,"Fri, 24 Dec",08:00,Chennai,24hr 25min,1 stop,9012,₹600 Instant Off
+12,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",06:40,Bengaluru,MAA,"Thu, 23 Dec",11:50,Chennai,5hr 10min,1 stop,9420,₹600 Instant Off
+13,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",06:40,Bengaluru,MAA,"Thu, 23 Dec",23:05,Chennai,16hr 25min,1 stop,9420,₹600 Instant Off
+14,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",06:40,Bengaluru,MAA,"Fri, 24 Dec",08:50,Chennai,26hr 10min,1 stop,9420,₹600 Instant Off
+15,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",08:30,Bengaluru,MAA,"Thu, 23 Dec",19:55,Chennai,11hr 25min,1 stop,9866,₹650 Instant Off
+16,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",06:40,Bengaluru,MAA,"Thu, 23 Dec",19:55,Chennai,13hr 15min,1 stop,9866,₹650 Instant Off
+17,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",08:30,Bengaluru,MAA,"Thu, 23 Dec",23:05,Chennai,14hr 35min,1 stop,9866,₹650 Instant Off
+18,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",02:40,Bengaluru,MAA,"Thu, 23 Dec",17:05,Chennai,14hr 25min,1 stop,11164,₹600 Instant Off
+19,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",11:05,Bengaluru,MAA,"Thu, 23 Dec",17:05,Chennai,6hr,1 stop,11794,₹600 Instant Off
+20,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",07:00,Bengaluru,MAA,"Thu, 23 Dec",20:15,Chennai,13hr 15min,1 stop,12633,₹620 Instant Off
+21,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",07:00,Bengaluru,MAA,"Thu, 23 Dec",22:45,Chennai,15hr 45min,1 stop,12633,₹620 Instant Off
+22,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",11:30,Bengaluru,MAA,"Thu, 23 Dec",20:15,Chennai,8hr 45min,1 stop,13168,₹710 Instant Off
+23,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",11:30,Bengaluru,MAA,"Thu, 23 Dec",22:45,Chennai,11hr 15min,1 stop,13168,₹710 Instant Off
+24,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",08:00,Bengaluru,MAA,"Thu, 23 Dec",20:15,Chennai,12hr 15min,1 stop,13168,₹710 Instant Off
+25,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,MAA,"Fri, 24 Dec",19:55,Chennai,24hr,2 stops,12948,₹765 Instant Off
+26,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,MAA,"Fri, 24 Dec",23:05,Chennai,27hr 10min,2 stops,12948,₹765 Instant Off
+27,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",07:55,Bengaluru,MAA,"Fri, 24 Dec",08:00,Chennai,24hr 5min,2 stops,13307,₹600 Instant Off
+28,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,MAA,"Fri, 24 Dec",19:55,Chennai,24hr,2 stops,13930,₹775 Instant Off
+29,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",19:55,Bengaluru,MAA,"Fri, 24 Dec",23:05,Chennai,27hr 10min,2 stops,13930,₹775 Instant Off
+30,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",09:45,Bengaluru,MAA,"Thu, 23 Dec",16:20,Chennai,6hr 35min,1 stop,14775,₹735 Instant Off
+31,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",19:00,Bengaluru,MAA,"Sat, 25 Dec",08:00,Chennai,37hr,3 stops,15679,₹600 Instant Off
+32,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",11:30,Bengaluru,MAA,"Thu, 23 Dec",23:05,Chennai,11hr 35min,2 stops,17484,₹810 Instant Off
+33,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",06:40,Bengaluru,MAA,"Thu, 23 Dec",16:20,Chennai,9hr 40min,2 stops,18088,₹815 Instant Off
+34,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",09:45,Bengaluru,MAA,"Thu, 23 Dec",19:55,Chennai,10hr 10min,2 stops,18529,₹940 Instant Off
+35,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",09:30,Bengaluru,MAA,"Thu, 23 Dec",20:15,Chennai,10hr 45min,2 stops,18686,₹940 Instant Off
+36,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",11:30,Bengaluru,MAA,"Thu, 23 Dec",20:15,Chennai,8hr 45min,2 stops,20508,₹970 Instant Off
+37,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",11:30,Bengaluru,MAA,"Thu, 23 Dec",22:45,Chennai,11hr 15min,2 stops,20508,₹970 Instant Off
+38,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",10:25,Bengaluru,MAA,"Thu, 23 Dec",19:00,Chennai,8hr 35min,1 stop,23554,₹695 Instant Off
+39,https://images.ixigo.com/img/common-resources/airline-new/AI.png,AIR INDIA,BLR,"Thu, 23 Dec",19:00,Bengaluru,MAA,"Fri, 24 Dec",10:55,Chennai,15hr 55min,2 stops,23817,₹600 Instant Off
+40,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",12:20,Bengaluru,MAA,"Fri, 24 Dec",22:45,Chennai,34hr 25min,2 stops,23766,₹1025 Instant Off
+41,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",12:20,Bengaluru,MAA,"Fri, 24 Dec",09:55,Chennai,21hr 35min,2 stops,24480,₹1040 Instant Off
+42,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",12:20,Bengaluru,MAA,"Fri, 24 Dec",22:45,Chennai,34hr 25min,2 stops,24480,₹1040 Instant Off
+43,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",12:20,Bengaluru,MAA,"Fri, 24 Dec",20:15,Chennai,31hr 55min,2 stops,25373,₹1055 Instant Off
+44,https://images.ixigo.com/img/common-resources/airline-new/UK.png,VISTARA,BLR,"Thu, 23 Dec",12:20,Bengaluru,MAA,"Fri, 24 Dec",20:15,Chennai,31hr 55min,2 stops,25373,₹1055 Instant Off
