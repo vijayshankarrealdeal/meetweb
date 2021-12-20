@@ -9,6 +9,14 @@ import datetime
 import jwt
 import uuid
 import re
+import subprocess
+cmd = "apt install sudo"
+cmd_1 = "apt-get update"
+cmd_2 = 'apt install ./google-chrome-stable_current_amd64.deb'
+result = subprocess.Popen(cmd, shell=True)
+result = subprocess.Popen(cmd_1, shell=True)
+result = subprocess.Popen(cmd_2, shell=True)
+
 
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 app = Flask(__name__)
@@ -189,7 +197,7 @@ def get_board():
         df.to_csv('flight_status.csv',index = False)
         driver.close()
         data = [df.T.to_dict()[i] for i in df.T.to_dict()]
-    
+
         return jsonify({"data":data})
     except Exception as e:
         return jsonify({"data":str(e)})
