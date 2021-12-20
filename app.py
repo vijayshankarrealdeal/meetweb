@@ -163,7 +163,6 @@ def get(type_shop):
 #getFlightChartBoard
 @app.route('/api/getflightstatus',methods=["GET"])
 def get_board():
-
     try:
         options = webdriver.ChromeOptions()
         options.add_argument("--headless")
@@ -190,10 +189,10 @@ def get_board():
         df.to_csv('flight_status.csv',index = False)
         driver.close()
         data = [df.T.to_dict()[i] for i in df.T.to_dict()]
-
         return jsonify({"data":data})
     except Exception as e:
-        return jsonify({"data":str(e)})
+        df = pd.read_csv('flight_status.csv')
+        return jsonify({"data":[df.T.to_dict()[i] for i in df.T.to_dict()]})
 ##-----------------------------------------------------##
 #########################################################
 ##GetFlights between Places
