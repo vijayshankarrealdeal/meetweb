@@ -261,7 +261,7 @@ def get_flights(orgin, destination, date, adults, children, infants):
     except Exception as e:
         def get_date(x):
             return datetime.fromisoformat(x).strftime('%a, %d %b')
-        df = df = pd.read_csv(f'{orgin}-{destination}.csv', index_col=0)
+        df = df = pd.read_csv(f'{orgin.upper()}-{destination.upper()}.csv', index_col=0)
         df.orgin_date = [get_date(date) for i in df.orgin_date]
         for i in range(len(df.dest_date) -1):
             k = int(df.dest_date[i].split(' ')[1])
