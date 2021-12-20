@@ -6,6 +6,7 @@ from time import sleep
 from selenium import webdriver
 import sqlite3
 from datetime import datetime
+from datetime import timedelta
 import jwt
 import uuid
 import re
@@ -26,7 +27,7 @@ app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
 def genrate_token(key):
 
-    token = jwt.encode({'id':key,'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=5)}, app.config['SECRET_KEY'],'HS256')
+    token = jwt.encode({'id':key,'exp' : datetime.utcnow() + timedelta(minutes=5)}, app.config['SECRET_KEY'],'HS256')
     return token
 
 @app.route('/api/userreg/<string:email>/<string:password1>',methods = ["GET","POST"])
