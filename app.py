@@ -12,10 +12,13 @@ import re
 import subprocess
 cmd = "apt install sudo"
 cmd_1 = "apt-get update"
-cmd_2 = 'apt install ./google-chrome-stable_current_amd64.deb'
+cmd_2 = "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+cmd_3 = 'apt install ./google-chrome-stable_current_amd64.deb'
 result = subprocess.Popen(cmd, shell=True)
 result = subprocess.Popen(cmd_1, shell=True)
 result = subprocess.Popen(cmd_2, shell=True)
+result = subprocess.Popen(cmd_3, shell=True)
+print(result)
 
 
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
