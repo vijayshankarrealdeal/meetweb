@@ -113,8 +113,16 @@ def get_movieList():
     return data.json()
 
 
-@app.route('/api/hotels/<int:checkin_day>/<int:checkin_month>/<int:checkin_year>/<int:checkout_day>/<int:checkout_month>/<int:checkout_year>',methods=["GET"])
-def hotelAPi(checkin_day, checkin_month, checkin_year, checkout_day, checkout_month, checkout_year):
+@app.route('/api/hotels/<string:checkin>/<string:checkout>',methods=["GET"])
+def hotelAPi(checkin,checkout):
+    check_in = checkin.split('-')
+    check_out = checkout.split('-')
+    checkin_year = int(check_in[0])
+    checkout_year = int(check_out[0])
+    checkout_day = int(check_out[2])
+    checkin_day = int(check_in[2])
+    checkin_month = int(check_in[1])
+    checkout_month = int(check_out[1])
     days = abs(checkout_day - checkin_day)
     month = abs(checkin_month - checkout_month)
     yr = abs(checkin_year - checkout_year)
