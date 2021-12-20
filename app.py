@@ -209,6 +209,7 @@ def get_flights(orgin, destination, date, adults, children, infants):
         driver = webdriver.Chrome('./chromedriver', options=options)
         driver.maximize_window()
         driver.get(url)
+        sleep(2)
         total_items = []
         pages = driver.find_element_by_class_name('c-pagination') 
         all_pages = pages.find_elements_by_xpath('.//span[@class = "page-num"]')
