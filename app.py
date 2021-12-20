@@ -5,7 +5,7 @@ import pandas as pd
 from time import sleep 
 from selenium import webdriver
 import sqlite3
-import datetime
+from datetime import datetime
 import jwt
 import uuid
 import re
