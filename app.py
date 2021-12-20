@@ -189,7 +189,7 @@ def get_board():
         df.to_csv('flight_status.csv',index = False)
         driver.close()
         data = [df.T.to_dict()[i] for i in df.T.to_dict()]
-
+    
         return jsonify({"data":data})
     except Exception as e:
         return jsonify({"data":str(e)})
