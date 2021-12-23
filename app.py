@@ -172,7 +172,7 @@ def get_foods(type_food):
 hotel api
 """
 @app.route('/api/shop/<string:type_shop>',methods=["GET"])
-def get(type_shop):
+def get_shops(type_shop):
     x = []
     if type_shop == 'n':
         df = pd.read_csv('data_shop_national.csv',index_col=0)
