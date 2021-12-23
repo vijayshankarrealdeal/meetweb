@@ -153,6 +153,21 @@ def hotelAPi(checkin,checkout):
     df['money_num'] = df.money.apply(money_numX)
     hoteldata =  [df.T.to_dict()[i] for i in df.T.to_dict()]
     return jsonify({"data": hoteldata})    
+"""
+Eating stuffs
+"""
+@app.route('/api/food/<string:type_shop>',methods=["GET"])
+def get(type_shop):
+    x = []
+    if type_shop == 'pre':
+        df = pd.read_csv('Pre-security.csv.csv',index_col=0)
+        
+        x = [df.T.to_dict()[i] for i in df.T.to_dict()]
+    else:
+        df = pd.read_csv('Post-security.csv.csv',index_col=0)
+        x = [df.T.to_dict()[i] for i in df.T.to_dict()]
+    return jsonify({"data":x})
+
 
 """
 hotel api
