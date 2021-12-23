@@ -160,11 +160,11 @@ Eating stuffs
 def get(type_shop):
     x = []
     if type_shop == 'pre':
-        df = pd.read_csv('Pre-security.csv.csv',index_col=0)
+        df = pd.read_csv('Pre-security.csv',index_col=0)
         
         x = [df.T.to_dict()[i] for i in df.T.to_dict()]
     else:
-        df = pd.read_csv('Post-security.csv.csv',index_col=0)
+        df = pd.read_csv('Post-security.csv',index_col=0)
         x = [df.T.to_dict()[i] for i in df.T.to_dict()]
     return jsonify({"data":x})
 
