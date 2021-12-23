@@ -156,10 +156,10 @@ def hotelAPi(checkin,checkout):
 """
 Eating stuffs
 """
-@app.route('/api/food/<string:type_shop>',methods=["GET"])
-def get(type_shop):
+@app.route('/api/food/<string:type_food>',methods=["GET"])
+def get(type_food):
     x = []
-    if type_shop == 'pre':
+    if type_food == 'pre':
         df = pd.read_csv('Pre-security.csv') 
         x = [df.T.to_dict()[i] for i in df.T.to_dict()]
     else:
