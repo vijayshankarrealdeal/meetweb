@@ -157,7 +157,7 @@ def hotelAPi(checkin,checkout):
 Eating stuffs
 """
 @app.route('/api/food/<string:type_food>',methods=["GET"])
-def get(type_food):
+def get_foods(type_food):
     x = []
     if type_food == 'pre':
         df = pd.read_csv('Pre-security.csv') 
