@@ -300,4 +300,14 @@ def get_flights(orgin, destination, date, adults, children, infants):
         return jsonify({"data":[df.T.to_dict()[i] for i in df.T.to_dict()]})
 
 
+@app.route('/api/askquestion/<string:question>')
+def askquestions(question):
+    url = "https://air-a4a8.azurewebsites.net/qnamaker/knowledgebases/70822121-d79f-40c3-a092-e2897a2206fc/generateAnswer"
+    headers = {'Content-Type': 'application/json', 'Authorization': "eef56569-aa6d-44a4-8798-dd368debb2ab"}
+    data = str({'question':question})
+    response = requests.post(url, headers=headers, data=data)
+    return jsonify({"data":response.json()['answers'][0]['answer']})
+
+
+
 app.config["DEBUG"] = True
