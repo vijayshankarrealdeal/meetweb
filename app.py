@@ -22,10 +22,10 @@ user = "inbox"
 password = "google@99"
 sslmode = "require"
 conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
+conn = psycopg2.connect(conn_string)
+cursor = conn.cursor()
+print("Connection established")
 try:
-    conn = psycopg2.connect(conn_string)
-    print("Connection established")
-    cursor = conn.cursor()
     #return jsonify({"data":"e"})    
     cursor.execute("CREATE TABLE users (ID VARCHAR(100) PRIMARY KEY NOT NULL,TOKEN VARCHAR(1000)  NOT NULL ,EMAIL  VARCHAR(100)  NOT NULL, PASSWORD  VARCHAR(200) NOT NULL);")
     print("Finished creating table")
@@ -36,7 +36,6 @@ except Exception as e:
 app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
 def genrate_token(key):
-
     token = jwt.encode({'id':key,'exp' : datetime.utcnow() + timedelta(minutes=5)}, app.config['SECRET_KEY'],'HS256')
     return token
 
