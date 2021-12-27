@@ -4,7 +4,7 @@ from flask_cors import CORS
 import pandas as pd
 from time import sleep 
 from selenium import webdriver
-import sqlite3
+import psycopg2
 from datetime import datetime
 from datetime import timedelta
 import jwt
@@ -15,12 +15,22 @@ import re
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 app = Flask(__name__)
 CORS(app)
-try:
-    conn = sqlite3.connect("user.db",check_same_thread=False)
-    cursor = conn.cursor()
-    cursor.execute('''CREATE TABLE USERS (ID TEXT PRIMARY KEY NOT NULL,TOKEN TEXT  NOT NULL ,EMAIL  TEXT  NOT NULL, PASSWORD  TEXT NOT NULL)''')
 
-except:
+host = "inbox.postgres.database.azure.com"
+dbname = "myapp"
+user = "inbox"
+password = "google@99"
+sslmode = "require"
+conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
+try:
+    conn = psycopg2.connect(conn_string)
+    print("Connection established")
+    cursor = conn.cursor()
+    #return jsonify({"data":"e"})    
+    cursor.execute("CREATE TABLE users (ID VARCHAR(100) PRIMARY KEY NOT NULL,TOKEN VARCHAR(1000)  NOT NULL ,EMAIL  VARCHAR(100)  NOT NULL, PASSWORD  VARCHAR(200) NOT NULL);")
+    print("Finished creating table")
+except Exception as e:
+    print(e)
     pass
 
 app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
@@ -32,29 +42,13 @@ def genrate_token(key):
 
 @app.route('/api/userreg/<string:email>/<string:password1>',methods = ["GET","POST"])
 def register(email,password1):
-    conn = sqlite3.connect("user.db")
-    rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
-    for data in rows:
-        if  email in data[2]: 
-         return jsonify({"error":"user exits"})
-    if(re.fullmatch(regex, email) and (len(password1) > 6 )):   
-        cursor = conn.cursor()
-        id = str(uuid.uuid1())
-        token = genrate_token(id)
-        cursor.execute("""INSERT INTO USERS(ID,TOKEN ,EMAIL, PASSWORD) 
-           VALUES (\"%s\",\"%s\",\"%s\",\"%s\")""" % (id, token,email, password1))
-        conn.commit()
-        return jsonify({'token':token,"userId":id})
-    else:
-        return jsonify({"data":'Invalid Email or Password'})
+    return jsonify({"data":"e"})
+
 
 @app.route('/api/userforgotpass/<string:uid><string:currentpass>/<string:newpassword>')
 def updatePassword(uid,currentpass,newpas):
-    conn = sqlite3.connect("user.db")
-    cursor = conn.cursor()
-    row = cursor.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
-    print(row)
-    conn.close()
+        return jsonify({"data":"e"})
+
 
 
 
@@ -63,52 +57,56 @@ def updatePassword(uid,currentpass,newpas):
 
 @app.route('/api/refresh_token/<string:token>/<string:uid>',methods=["GET","POST"])
 def refresh_token(token,uid):
-    if len(uid) != 0:
-        conn = sqlite3.connect("user.db")
-        cursor = conn.cursor()
-        try:
-            tmp_token = jwt.decode(token,app.config['SECRET_KEY'],algorithms=['HS256'])  
-            return jsonify({"token":token})
-        except Exception as e:
-            rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
-            rows[0]
-            new_token = genrate_token(uid)
-            cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
-            return jsonify({"token":new_token,"uid":uid})
+    # if len(uid) != 0:
+    #     conn = sqlite3.connect("user.db")
+    #     cursor = conn.cursor()
+    #     try:
+    #         tmp_token = jwt.decode(token,app.config['SECRET_KEY'],algorithms=['HS256'])  
+    #         return jsonify({"token":token})
+    #     except Exception as e:
+    #         rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
+    #         rows[0]
+    #         new_token = genrate_token(uid)
+    #         cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(new_token, uid))
+    #         return jsonify({"token":new_token,"uid":uid})
     return jsonify({"token":'error'})
 
 @app.route('/api/login/<string:email>/<string:password>')
 def login(email,password):
-    conn = sqlite3.connect("user.db")
-    cursor = conn.cursor()
-    rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
-    db_password = rows[0][3]
-    db_uid = rows[0][1]
-    if(db_password == password): 
-        token = genrate_token(db_uid)
-        cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(token, db_uid))
-        return jsonify({'token':token,"userId":db_uid})
-    else:
-        return jsonify({'error':"Invalid Password"})
+    return jsonify({"data":"e"})
+
+    # conn = sqlite3.connect("user.db")
+    # cursor = conn.cursor()
+    # rows =  conn.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE EMAIL = ?",(email,),).fetchall()
+    # db_password = rows[0][3]
+    # db_uid = rows[0][1]
+    # if(db_password == password): 
+    #     token = genrate_token(db_uid)
+    #     cursor.execute("UPDATE USERS SET TOKEN = ? WHERE ID = ?",(token, db_uid))
+    #     return jsonify({'token':token,"userId":db_uid})
+    # else:
+    #     return jsonify({'error':"Invalid Password"})
 
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
-    conn = sqlite3.connect("user.db") 
-    try:
-        data = []
-        rows =  conn.execute("SELECT ID, EMAIL, PASSWORD from USERS")
-        for row in rows:
-            k = {}
-            k['id'] = str(row[0])
-            k['email'] = str(row[1])
-            k['password'] = str(row[2])
-            data.append(k)
-        conn.close()
-        return jsonify({"data":data})
-    except Exception as e:
-        conn.close()
-        return jsonify({"data":str(e)})
+    return jsonify({"data":"e"})
+
+    # conn = sqlite3.connect("user.db") 
+    # try:
+    #     data = []
+    #     rows =  conn.execute("SELECT ID, EMAIL, PASSWORD from USERS")
+    #     for row in rows:
+    #         k = {}
+    #         k['id'] = str(row[0])
+    #         k['email'] = str(row[1])
+    #         k['password'] = str(row[2])
+    #         data.append(k)
+    #     conn.close()
+    #     return jsonify({"data":data})
+    # except Exception as e:
+    #     conn.close()
+    #     return jsonify({"data":str(e)})
     
 
 
