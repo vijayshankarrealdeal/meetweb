@@ -24,20 +24,6 @@ conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(hos
 conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 print("Connection established")
-try:
-    sql_statement = """
-    CREATE TABLE users (
-    col_uuid VARCHAR(32) PRIMARY KEY,
-    col_str VARCHAR(64) UNIQUE NOT NULL,
-    col_int INTEGER NOT NULL,
-    col_bool BOOLEAN NOT NULL
-    );"""
-    cursor.execute(sql_statement)
-    print("Finished creating table")
-except Exception as e:
-    print(e)
-    pass
-
 app.config['SECRET_KEY']= "004f2af45d3a4e161a7dd2d17fdae47f"
 
 def genrate_token(key):
