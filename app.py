@@ -35,7 +35,7 @@ def register(email,password1):
     try:
         if(re.fullmatch(regex, email)):
             id = str(uuid.uuid1())+email
-            postgres_insert_query = """ INSERT INTO USERS (uid, token, email,password) VALUES (%s,%s,%s,%s)"""
+            postgres_insert_query = """ INSERT INTO "USERS" (uid, token, email,password) VALUES (%s,%s,%s,%s)"""
             record_to_insert = (id, genrate_token(id), email, password1)
             cursor.execute(postgres_insert_query, record_to_insert)
             conn.commit()
@@ -44,6 +44,7 @@ def register(email,password1):
             Exception("Inavlid Email")
             
     except (Exception, psycopg2.Error) as error:
+        print(error)
         return jsonify({"error":str(error)})
 
 
