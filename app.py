@@ -63,7 +63,7 @@ def updatePassword(uid,currentpass,newpassword):
     cursor.execute("""SELECT * from "USERS" WHERE uid = %s""",(uid,),)
     rows = cursor.fetchall()
     oldpass = [row[2] for row in rows]
-    if oldpass == currentpass:
+    if currentpass in oldpass:
         cursor.execute("""UPDATE "USERS" SET password = %s WHERE uid = %s""",(newpassword, uid))
         return jsonify({"status":"done"}) 
     else:  
