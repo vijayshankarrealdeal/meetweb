@@ -67,7 +67,7 @@ def updatePassword(uid,currentpass,newpassword):
         cursor.execute("""UPDATE "USERS" SET password = %s WHERE uid = %s""",(newpassword, uid))
         return jsonify({"status":"done"}) 
     else:  
-        return jsonify({"error":"current_password is wrong"})
+        return jsonify({"error":"current_password is wrong"+str(oldpass)})
 
 
 
