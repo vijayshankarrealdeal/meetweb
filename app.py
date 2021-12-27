@@ -26,15 +26,14 @@ conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 print("Connection established")
 try:
-    cursor.execute(
-        """
-        CREATE TABLE users (
-            user_id VARCHAR(500) PRIMARY KEY NOT NULL,
-            user_token VARCHAR(1000)  NOT NULL,
-            user_email VARCHAR(1000)  NOT NULL,
-            user_password VARCHAR(1000)  NOT NULL,
-        )
-        """)
+    sql_statement = """
+    CREATE TABLE users (
+    col_uuid VARCHAR(32) PRIMARY KEY,
+    col_str VARCHAR(64) UNIQUE NOT NULL,
+    col_int INTEGER NOT NULL,
+    col_bool BOOLEAN NOT NULL
+    );"""
+    cursor.execute(sql_statement)
     print("Finished creating table")
 except Exception as e:
     print(e)
