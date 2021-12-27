@@ -115,10 +115,8 @@ def get_request():
             k['email'] = str(row[1])
             k['password'] = str(row[2])
             data.append(k)
-        conn.close()
         return jsonify({"data":data})
     except Exception as e:
-        conn.close()
         return jsonify({"data":str(e)})
     
 
