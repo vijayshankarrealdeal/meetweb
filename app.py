@@ -26,8 +26,15 @@ conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 print("Connection established")
 try:
-    #return jsonify({"data":"e"})    
-    cursor.execute("CREATE TABLE users (ID VARCHAR(100) PRIMARY KEY NOT NULL,TOKEN VARCHAR(1000)  NOT NULL ,EMAIL  VARCHAR(100)  NOT NULL, PASSWORD  VARCHAR(200) NOT NULL);")
+    cursor.execute(
+        """
+        CREATE TABLE users (
+            user_id VARCHAR(500) PRIMARY KEY NOT NULL,
+            user_token VARCHAR(1000)  NOT NULL,
+            user_email VARCHAR(1000)  NOT NULL,
+            user_password VARCHAR(1000)  NOT NULL,
+        )
+        """)
     print("Finished creating table")
 except Exception as e:
     print(e)
