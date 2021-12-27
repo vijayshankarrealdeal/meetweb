@@ -48,6 +48,18 @@ def register(email,password1):
     else:
         return jsonify({"data":'Invalid Email or Password'})
 
+@app.route('/api/userforgotpass/<string:uid><string:currentpass>/<string:newpassword>')
+def updatePassword(uid,currentpass,newpas):
+    conn = sqlite3.connect("user.db")
+    cursor = conn.cursor()
+    row = cursor.execute("SELECT ID,TOKEN ,EMAIL, PASSWORD from USERS WHERE ID = ?",(uid,),).fetchall()
+    print(row)
+    conn.close()
+
+
+
+
+
 
 @app.route('/api/refresh_token/<string:token>/<string:uid>',methods=["GET","POST"])
 def refresh_token(token,uid):
