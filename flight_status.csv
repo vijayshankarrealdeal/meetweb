@@ -1,89 +1,184 @@
-departure,time,flight,airline,info_url,status
-Mumbai (BOM),18:00,6E5389,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5389,Scheduled - On-time [+]
-Kolkata (CCU),18:00,6E201,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E201,Scheduled - On-time [+]
-Hubli (HBX),18:05,6E7162,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7162,Scheduled - On-time [+]
-Chennai (MAA),18:15,6E6017,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6017,Scheduled - On-time [+]
-Udaipur (UDR),18:15,6E687,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E687,Scheduled - On-time [+]
-Mumbai (BOM),18:25,UK854,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK854,Scheduled - Delayed [+]
-Kolkata (CCU),18:30,I51321,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51321,Scheduled - On-time [+]
-Ahmedabad (AMD),18:35,6E239,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E239,Scheduled - On-time [+]
-Kannur (CNN),18:45,6E7974,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7974,Scheduled - On-time [+]
-Hyderabad (HYD),18:45,"9I517
-AI9517","Alliance Air
-Air India",https://www.bangaloreairport.com/kempegowda-flight-departure/9I517,Scheduled - On-time [+]
-Ahmedabad (AMD),18:50,G8803,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8803,Scheduled - On-time [+]
-Mumbai (BOM),18:50,I51561,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51561,Scheduled - On-time [+]
-Delhi (DEL),18:50,UK802,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK802,Scheduled - On-time [+]
-Jaipur (JAI),18:55,6E838,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E838,Scheduled - Delayed [+]
-Mumbai (BOM),19:00,UK864,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK864,Scheduled - Delayed [+]
-Delhi (DEL),19:05,SG535,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG535,Canceled [+]
-Nagpur (NAG),19:05,6E6802,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6802,Scheduled - On-time [+]
-Mumbai (BOM),19:10,AI610,Air India,https://www.bangaloreairport.com/kempegowda-flight-departure/AI610,Scheduled - On-time [+]
-Delhi (DEL),19:15,6E2034,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E2034,Scheduled - On-time [+]
-Vijayawada (VGA),19:15,6E7134,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7134,Scheduled - On-time [+]
-Hyderabad (HYD),19:20,6E638,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E638,Scheduled - On-time [+]
-Mangalore (IXE),19:20,SG3008,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG3008,Scheduled - On-time [+]
-Delhi (DEL),19:25,I5996,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5996,Scheduled - On-time [+]
-Mangalore (IXE),19:30,6E109,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E109,Scheduled - On-time [+]
-Mumbai (BOM),19:35,6E5203,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5203,Scheduled - On-time [+]
-Kochi (COK),19:40,6E6787,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6787,Scheduled - On-time [+]
-Delhi (DEL),19:40,"UK818
-BA5840
-UA7724","Vistara
-British Airways
-United Airlines",https://www.bangaloreairport.com/kempegowda-flight-departure/UK818,Scheduled - On-time [+]
-Kochi (COK),19:45,I5991,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5991,Scheduled - On-time [+]
-Coimbatore (CJB),19:50,6E6875,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6875,Scheduled - On-time [+]
-Goa (GOI),19:50,6E309,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E309,Scheduled - On-time [+]
-Mumbai (BOM),19:55,"UK850
-UA7771","Vistara
-United Airlines",https://www.bangaloreairport.com/kempegowda-flight-departure/UK850,Scheduled - On-time [+]
-Hyderabad (HYD),19:55,UK893,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK893,Scheduled - On-time [+]
-Mumbai (BOM),20:00,G8320,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8320,Scheduled - Delayed [+]
-Kolkata (CCU),20:00,G8791,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8791,Scheduled - Delayed [+]
-Kolkata (CCU),20:05,6E676,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E676,Canceled [+]
-Delhi (DEL),20:10,6E6386,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6386,Scheduled - On-time [+]
-Hyderabad (HYD),20:15,6E855,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E855,Scheduled - On-time [+]
-Pune (PNQ),20:20,6E426,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E426,Scheduled - On-time [+]
-Tiruchirappalli (TRZ),20:35,6E7165,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7165,Scheduled - On-time [+]
-Guwahati (GAU),20:40,6E6541,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6541,Scheduled - On-time [+]
-Goa (GOI),20:45,I51782,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51782,Scheduled - On-time [+]
-Ahmedabad (AMD),20:55,6E6423,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6423,Scheduled - On-time [+]
-Delhi (DEL),21:00,AI808,Air India,https://www.bangaloreairport.com/kempegowda-flight-departure/AI808,Scheduled - On-time [+]
-Delhi (DEL),21:00,G8118,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8118,Scheduled - Delayed [+]
-Delhi (DEL),21:10,"UK814
-BA5842","Vistara
-British Airways",https://www.bangaloreairport.com/kempegowda-flight-departure/UK814,Scheduled - On-time [+]
-Mumbai (BOM),21:15,6E332,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E332,Scheduled - On-time [+]
-Kochi (COK),21:25,6E463,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E463,Scheduled - On-time [+]
-Bhubaneswar (BBI),21:40,6E411,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E411,Scheduled - On-time [+]
-Mumbai (BOM),21:40,UK866,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK866,Scheduled - On-time [+]
-Kochi (COK),21:40,I51427,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51427,Scheduled - Delayed [+]
-Kolkata (CCU),21:45,6E975,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E975,Scheduled - On-time [+]
-Sharjah (SHJ),21:45,G9499,Air Arabia PJSC,https://www.bangaloreairport.com/kempegowda-flight-departure/G9499,Canceled [+]
-Sharjah (SHJ),21:45,SQ7374,Singapore Airlines,https://www.bangaloreairport.com/kempegowda-flight-departure/SQ7374,Scheduled [+]
-Jaipur (JAI),21:50,6E6273,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6273,Scheduled - On-time [+]
-Delhi (DEL),21:55,SG198,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG198,Scheduled - Delayed [+]
-Hyderabad (HYD),21:55,6E684,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E684,Scheduled - On-time [+]
-Mumbai (BOM),22:00,G8399,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8399,Scheduled [+]
-Delhi (DEL),22:10,6E5007,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5007,Scheduled - On-time [+]
-Delhi (DEL),22:10,I5749,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5749,Scheduled - On-time [+]
-Kochi (COK),22:15,G8812,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8812,Scheduled [+]
-Hong Kong (HKG),22:30,CX42,Cathay Pacific,https://www.bangaloreairport.com/kempegowda-flight-departure/CX42,Scheduled [+]
-Mumbai (BOM),22:40,6E5344,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5344,Scheduled - On-time [+]
-Thiruvananthapuram (TRV),22:45,6E437,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E437,Scheduled - On-time [+]
-Hyderabad (HYD),22:50,G8518,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8518,Scheduled [+]
-Chennai (MAA),22:55,6E357,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E357,Scheduled - On-time [+]
-Nagpur (NAG),23:00,6E486,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E486,Scheduled - On-time [+]
-Pune (PNQ),23:00,6E232,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E232,Scheduled - On-time [+]
-Kolkata (CCU),23:10,I5992,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5992,Scheduled - On-time [+]
-Singapore (SIN),23:10,"SQ511
-NH6281
-NZ3207","Singapore Airlines
-ANA All Nippon Airways
-Air New Zealand",https://www.bangaloreairport.com/kempegowda-flight-departure/SQ511,Scheduled [+]
-Singapore (SIN),23:10,G827,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G827,Scheduled [+]
-Kolkata (CCU),23:25,6E952,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E952,Scheduled - On-time [+]
-Indore (IDR),23:30,6E747,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E747,Scheduled - On-time [+]
-Delhi (DEL),23:35,6E2053,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E2053,Scheduled - On-time [+]
-Hyderabad (HYD),23:45,6E6178,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6178,Scheduled - On-time [+]
+departure,time,flight,airline,info_url,status,is_departure
+Mumbai (BOM),06:00,6E5303,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5303,Landed - On-time [+],True
+Indore (IDR),06:05,6E6393,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6393,Landed - On-time [+],True
+Bagdogra (IXB),06:05,SG327,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG327,Landed - On-time [+],True
+Hubli (HBX),06:05,6E7227,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7227,Landed - On-time [+],True
+Delhi (DEL),06:10,I51528,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51528,Landed - On-time [+],True
+Delhi (DEL),06:10,AI804,Air India,https://www.bangaloreairport.com/kempegowda-flight-departure/AI804,Landed - On-time [+],True
+Hyderabad (HYD),06:10,6E6257,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6257,Landed - On-time [+],True
+Goa (GOI),06:15,6E194,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E194,Landed - Delayed [+],True
+Kochi (COK),06:15,6E702,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E702,Landed - On-time [+],False
+Hyderabad (HYD),06:15,G8509,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8509,Unknown [+],False
+Lucknow (LKO),06:20,6E6353,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6353,Landed - On-time [+],True
+Vijayawada (VGA),06:20,6E7204,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7204,Landed - Delayed [+],True
+Chennai (MAA),06:25,6E987,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E987,Landed - On-time [+],False
+Udaipur (UDR),06:25,SG468,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG468,Landed - On-time [+],True
+Bhubaneswar (BBI),06:25,I51564,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51564,Landed - On-time [+],True
+Ahmedabad (AMD),06:30,G8801,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8801,Landed - On-time [+],True
+Kolkata (CCU),06:30,I52472,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I52472,Landed - On-time [+],True
+Hyderabad (HYD),06:30,9I501,Alliance Air,https://www.bangaloreairport.com/kempegowda-flight-departure/9I501,En Route [+],True
+Pune (PNQ),06:30,6E6877,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6877,Landed - On-time [+],False
+Madurai (IXM),06:35,6E7171,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7171,Landed - On-time [+],True
+Kolkata (CCU),06:35,6E6339,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6339,Landed - On-time [+],True
+Mumbai (BOM),06:40,UK858,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK858,Landed - On-time [+],True
+Delhi (DEL),06:40,SG7613,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/SG7613,Landed - On-time [+],False
+Mumbai (BOM),06:40,6E5236,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E5236,Landed - On-time [+],False
+Rajahmundry (RJA),06:45,6E7107,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7107,Landed - On-time [+],True
+Jodhpur (JDH),06:50,6E6032,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6032,Landed - On-time [+],True
+Hyderabad (HYD),06:55,6E887,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E887,Landed - On-time [+],False
+Bhopal (BHO),06:55,6E702,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E702,Landed - On-time [+],True
+Mangalore (IXE),06:55,SG4009,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG4009,Landed - Delayed [+],True
+Pune (PNQ),07:00,G8283,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8283,En Route [+],True
+Mumbai (BOM),07:00,6E5365,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5365,Landed - On-time [+],True
+Delhi (DEL),07:00,"UK810
+BA5836","Vistara
+British Airways",https://www.bangaloreairport.com/kempegowda-flight-departure/UK810,Landed - On-time [+],True
+Chennai (MAA),07:05,6E6269,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6269,Landed - On-time [+],True
+Ranchi (IXR),07:05,I51621,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51621,Unknown [+],True
+Hyderabad (HYD),07:10,6E484,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E484,Landed - On-time [+],True
+Raipur (RPR),07:10,6E405,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E405,Landed - On-time [+],True
+Guwahati (GAU),07:15,I51982,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51982,Canceled [+],True
+Mangalore (IXE),07:20,6E131,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E131,Landed - On-time [+],True
+Bagdogra (IXB),07:20,I5410,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5410,En Route [+],True
+Tiruchirappalli (TRZ),07:25,6E7236,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7236,Landed - On-time [+],True
+Hyderabad (HYD),07:30,G8510,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8510,Unknown [+],True
+Chennai (MAA),07:30,I51530,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51530,Landed - On-time [+],True
+London (LHR),07:30,"BA118
+AA6656","British Airways
+American Airlines",https://www.bangaloreairport.com/kempegowda-flight-departure/BA118,En Route [+],True
+Hyderabad (HYD),07:35,I51576,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51576,Landed - On-time [+],True
+Thiruvananthapuram (TRV),07:35,6E6501,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6501,Landed - On-time [+],False
+Delhi (DEL),07:40,G8116,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8116,Landed - On-time [+],True
+Mumbai (BOM),07:40,G8317,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8317,Landed - On-time [+],False
+Hyderabad (HYD),07:40,SG7614,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG7614,Landed - On-time [+],True
+Coimbatore (CJB),07:45,6E857,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E857,Landed - On-time [+],True
+Nagpur (NAG),07:45,6E909,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E909,Landed - On-time [+],False
+Kochi (COK),07:45,G8805,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8805,Unknown [+],False
+Delhi (DEL),07:50,6E2186,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E2186,Landed - On-time [+],True
+Mumbai (BOM),07:50,UK845,Vistara,https://www.bangaloreairport.com/kempegowda-flight-arrival/UK845,Landed - On-time [+],False
+Sharjah (SHJ),07:50,6E1418,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E1418,Landed - DIVERTED [+],False
+Jaipur (JAI),07:50,6E839,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E839,Landed - On-time [+],False
+Coimbatore (CJB),07:55,6E475,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E475,Landed - On-time [+],False
+Delhi (DEL),08:00,UK808,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK808,Landed - On-time [+],True
+Guwahati (GAU),08:00,6E457,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E457,Landed - On-time [+],True
+Kolkata (CCU),08:05,6E379,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E379,Landed - On-time [+],False
+Mumbai (BOM),08:05,6E5323,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5323,Landed - On-time [+],True
+Delhi (DEL),08:05,SG191,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/SG191,Landed - On-time [+],False
+Mumbai (BOM),08:10,G8395,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8395,Landed - On-time [+],True
+Ahmedabad (AMD),08:15,6E823,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E823,Landed - On-time [+],False
+Jaipur (JAI),08:15,G8805,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8805,Landed - On-time [+],True
+Hyderabad (HYD),08:15,6E413,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E413,Landed - On-time [+],False
+Bhubaneswar (BBI),08:20,6E393,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E393,Landed - On-time [+],False
+Kolkata (CCU),08:25,SG516,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/SG516,Landed - Delayed [+],False
+Allahabad (IXD),08:25,6E5998,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E5998,En Route [+],True
+Mumbai (BOM),08:30,UK846,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK846,Landed - On-time [+],True
+Patna (PAT),08:30,6E255,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E255,Landed - On-time [+],True
+Mumbai (BOM),08:30,6E6463,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6463,Landed - Delayed [+],False
+Kochi (COK),08:35,I51452,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-arrival/I51452,Landed - On-time [+],False
+Thiruvananthapuram (TRV),08:35,6E688,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E688,Landed - On-time [+],True
+Kolkata (CCU),08:40,6E455,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E455,Landed - On-time [+],True
+Delhi (DEL),08:40,UK811,Vistara,https://www.bangaloreairport.com/kempegowda-flight-arrival/UK811,Landed - On-time [+],False
+Goa (GOI),08:40,I5819,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-arrival/I5819,Landed - Delayed [+],False
+Gulbarga (GBI),08:40,S5117,Star Air,https://www.bangaloreairport.com/kempegowda-flight-departure/S5117,Unknown [+],True
+Jaipur (JAI),08:40,6E415,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E415,Landed - On-time [+],True
+Delhi (DEL),08:40,G8113,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8113,Landed - Delayed [+],False
+Kochi (COK),08:45,6E728,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E728,Landed - On-time [+],False
+Mumbai (BOM),08:50,UK851,Vistara,https://www.bangaloreairport.com/kempegowda-flight-arrival/UK851,Landed - On-time [+],False
+Delhi (DEL),08:50,6E2336,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E2336,Landed - On-time [+],False
+Hyderabad (HYD),08:50,UK898,Vistara,https://www.bangaloreairport.com/kempegowda-flight-arrival/UK898,Landed - Delayed [+],False
+Darbhanga (DBR),08:55,SG693,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG693,En Route [+],True
+Delhi (DEL),08:55,AI803,Air India,https://www.bangaloreairport.com/kempegowda-flight-arrival/AI803,Landed - On-time [+],False
+Indore (IDR),08:55,6E701,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E701,Landed - On-time [+],False
+Surat Gujarat (STV),09:00,6E6176,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6176,En Route [+],True
+Pune (PNQ),09:00,6E391,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E391,Landed - On-time [+],False
+Mysore (MYQ),09:00,"9I505
+AI9505","Alliance Air
+Air India",https://www.bangaloreairport.com/kempegowda-flight-departure/9I505,Unknown [+],True
+Goa (GOI),09:00,SG3028,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/SG3028,Scheduled - Delayed [+],False
+Vishakhapatnam (VTZ),09:05,I51452,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I51452,Landed - On-time [+],True
+Bhubaneswar (BBI),09:05,6E246,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E246,Landed - On-time [+],True
+Chennai (MAA),09:10,6E541,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E541,Landed - Delayed [+],True
+Ranchi (IXR),09:15,I5819,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5819,En Route [+],True
+Patna (PAT),09:15,G8873,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8873,Landed - On-time [+],True
+Goa (GOI),09:15,6E249,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E249,Landed - Delayed [+],False
+Kurnool (KJB),09:20,6E7911,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7911,Landed - On-time [+],True
+Jabalpur (JLR),09:20,SG3023,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG3023,Scheduled - Delayed [+],True
+Amritsar (ATQ),09:20,6E477,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E477,En Route [+],True
+Hyderabad (HYD),09:20,6E886,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E886,Landed - On-time [+],True
+Male (MLE),09:25,6E1788,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E1788,En Route [+],True
+Mangalore (IXE),09:25,SG4010,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/SG4010,Landed - Delayed [+],False
+Mumbai (BOM),09:25,6E6293,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6293,Landed - Delayed [+],False
+Mumbai (BOM),09:30,UK852,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK852,Landed - On-time [+],True
+Delhi (DEL),09:30,6E2337,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E2337,En Route [+],True
+Colombo (CMB),09:30,6E1205,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E1205,En Route [+],True
+Vishakhapatnam (VTZ),09:30,6E287,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E287,Landed - On-time [+],False
+Hyderabad (HYD),09:35,6E151,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E151,Landed - On-time [+],False
+Chandigarh (IXC),09:35,6E849,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E849,Landed - On-time [+],False
+Mangalore (IXE),09:40,6E379,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E379,Landed - On-time [+],True
+Delhi (DEL),09:45,UK812,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK812,En Route [+],True
+Vadodara (BDQ),09:50,6E807,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E807,En Route [+],True
+Kochi (COK),09:50,6E113,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E113,En Route [+],True
+Mangalore (IXE),09:55,6E508,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E508,Landed - Delayed [+],False
+Madurai (IXM),09:55,6E7172,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E7172,Landed - On-time [+],False
+Kolkata (CCU),10:00,6E6128,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6128,Landed - On-time [+],False
+Port Blair (IXZ),10:00,6E6595,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6595,En Route [+],True
+Nagpur (NAG),10:05,6E6753,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6753,En Route [+],True
+Mumbai (BOM),10:05,6E5338,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E5338,Landed - On-time [+],False
+Hubli (HBX),10:05,S5101,Star Air,https://www.bangaloreairport.com/kempegowda-flight-departure/S5101,Scheduled [+],True
+Chennai (MAA),10:05,6E6137,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6137,Landed - On-time [+],False
+Coimbatore (CJB),10:15,6E532,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E532,Landed - On-time [+],False
+Hyderabad (HYD),10:15,6E537,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E537,Landed - On-time [+],True
+Port Blair (IXZ),10:15,G81802,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G81802,En Route [+],True
+Pune (PNQ),10:20,SG531,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG531,En Route [+],True
+Hyderabad (HYD),10:20,9I502,Alliance Air,https://www.bangaloreairport.com/kempegowda-flight-arrival/9I502,En Route - Delayed [+],False
+Ranchi (IXR),10:20,G8145,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8145,Unknown [+],False
+Vijayawada (VGA),10:20,6E7203,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E7203,Landed - Delayed [+],False
+Tirupati (TIR),10:25,6E7257,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7257,En Route [+],True
+Tiruchirappalli (TRZ),10:30,6E7245,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E7245,Landed - On-time [+],False
+Mumbai (BOM),10:30,6E488,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E488,En Route [+],True
+Gwalior (GWL),10:30,SG3325,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-departure/SG3325,En Route [+],True
+Ahmedabad (AMD),10:35,6E6772,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6772,Scheduled - Delayed [+],True
+Hyderabad (HYD),10:35,6E6066,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6066,Landed - On-time [+],False
+Delhi (DEL),10:40,I5740,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-arrival/I5740,Landed - On-time [+],False
+Pune (PNQ),10:40,G8752,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8752,Unknown [+],False
+Chandigarh (IXC),10:40,6E6512,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6512,En Route [+],True
+Varanasi (VNS),10:45,6E897,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E897,En Route [+],True
+Agartala (IXA),10:45,6E524,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E524,En Route [+],True
+Mumbai (BOM),10:45,UK863,Vistara,https://www.bangaloreairport.com/kempegowda-flight-arrival/UK863,Landed - On-time [+],False
+Kanpur (KNU),10:50,6E6477,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6477,En Route [+],True
+Madurai (IXM),10:50,6E7203,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7203,Scheduled - Delayed [+],True
+Delhi (DEL),10:50,"UK815
+BA5839","Vistara
+British Airways",https://www.bangaloreairport.com/kempegowda-flight-arrival/UK815,Landed - On-time [+],False
+Vijayawada (VGA),10:55,6E7071,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E7071,En Route [+],True
+Ahmedabad (AMD),10:55,6E758,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E758,Landed - On-time [+],False
+Riyadh (RUH),10:55,SV3714,Saudia,https://www.bangaloreairport.com/kempegowda-flight-arrival/SV3714,Landed - On-time [+],False
+Chennai (MAA),10:55,6E6212,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6212,En Route [+],True
+Lucknow (LKO),11:00,G8808,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8808,Scheduled - Delayed [+],True
+Vijaynagar (VDY),11:10,2T622,TruJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/2T622,Scheduled [+],False
+Bhubaneswar (BBI),11:15,I51565,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-arrival/I51565,Landed - On-time [+],False
+Delhi (DEL),11:15,6E2026,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E2026,Landed - On-time [+],False
+Udaipur (UDR),11:20,SG469,SpiceJet,https://www.bangaloreairport.com/kempegowda-flight-arrival/SG469,En Route - Delayed [+],False
+Mumbai (BOM),11:20,6E5366,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E5366,Landed - On-time [+],False
+Singapore (SIN),11:20,G828,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G828,Unknown [+],False
+Delhi (DEL),11:20,I5741,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I5741,En Route [+],True
+Pune (PNQ),11:20,6E6104,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6104,En Route [+],True
+Indore (IDR),11:25,6E6394,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E6394,Landed - On-time [+],False
+Ahmedabad (AMD),11:25,G8802,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G8802,Landed - On-time [+],False
+Delhi (DEL),11:30,"UK816
+BA5838","Vistara
+British Airways",https://www.bangaloreairport.com/kempegowda-flight-departure/UK816,Scheduled - On-time [+],True
+Phuket (HKT),11:30,G842,Go First,https://www.bangaloreairport.com/kempegowda-flight-arrival/G842,Unknown [+],False
+Chandigarh (IXC),11:30,UK657,Vistara,https://www.bangaloreairport.com/kempegowda-flight-departure/UK657,En Route [+],True
+Lucknow (LKO),11:35,6E325,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E325,Landed - On-time [+],False
+Raipur (RPR),11:40,6E406,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E406,Landed - On-time [+],False
+Bidar (IXX),11:40,2T625,TruJet,https://www.bangaloreairport.com/kempegowda-flight-departure/2T625,Scheduled [+],True
+Indore (IDR),11:40,6E6535,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E6535,Scheduled - On-time [+],True
+Kolkata (CCU),11:45,6E503,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E503,Scheduled - On-time [+],True
+Bagdogra (IXB),11:45,I52392,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-departure/I52392,Scheduled - On-time [+],True
+Patna (PAT),11:45,G8274,Go First,https://www.bangaloreairport.com/kempegowda-flight-departure/G8274,Scheduled - Delayed [+],True
+Bhubaneswar (BBI),11:50,AI738,Air India,https://www.bangaloreairport.com/kempegowda-flight-departure/AI738,Scheduled [+],True
+Delhi (DEL),11:50,UK801,Vistara,https://www.bangaloreairport.com/kempegowda-flight-arrival/UK801,En Route - On-time [+],False
+Bhopal (BHO),11:50,6E703,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-arrival/6E703,Landed - On-time [+],False
+Bagdogra (IXB),11:55,I51781,AirAsia India,https://www.bangaloreairport.com/kempegowda-flight-arrival/I51781,En Route - On-time [+],False
+Delhi (DEL),11:55,6E2027,IndiGo,https://www.bangaloreairport.com/kempegowda-flight-departure/6E2027,Scheduled - On-time [+],True

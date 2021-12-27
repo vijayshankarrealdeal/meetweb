@@ -208,7 +208,28 @@ def get_board():
                 data.append(k)
             except:
                 pass
-        df = pd.DataFrame(data)
+        df_departure = pd.DataFrame(data)
+        df_departure['is_departure'] = True
+        ####----------------------------------###############
+        driver.get('https://www.bangaloreairport.com/kempegowda-arrivals')
+        items = driver.find_elements_by_xpath('.//div[@class = "flight-row"]')
+        data = []
+        for item in items:
+            try:
+                k = {}
+                k['departure'] = item.find_element_by_xpath('.//div[1]').text
+                k['time'] = item.find_element_by_xpath('.//div[2]//div[1]').text
+                k['flight'] = item.find_element_by_xpath('.//div[2]//div[2]').text
+                k['airline'] = item.find_element_by_xpath('.//div[2]//div[3]').text
+                k['info_url'] = item.find_element_by_xpath('.//div[2]').find_element_by_tag_name('a').get_attribute('href')
+                k['status'] = item.find_element_by_xpath('.//div[contains(@class ,"flight-col flight-col__status")]').text
+                data.append(k)
+            except:
+                pass
+        df_arrival = pd.DataFrame(data)
+        df_arrival['is_departure'] = False
+        df = pd.concat([df_arrival,df_departure],axis = 0).reset_index(drop=True)
+        df = df.sort_values('time').reset_index(drop = True)
         df.to_csv('flight_status.csv',index = False)
         driver.close()
         data = [df.T.to_dict()[i] for i in df.T.to_dict()]
