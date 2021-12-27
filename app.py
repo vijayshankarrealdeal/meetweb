@@ -36,10 +36,11 @@ def register(email,password1):
         if(re.fullmatch(regex, email)):
             searc_state = """SELECT * FROM "USERS" WHERE email = %s """
             cursor.execute(searc_state,(email,))
-            row = cursor.fetchall()
-            print(row)
-            if email in row[0][1]:
-                Exception("User Exits")
+            rows = cursor.fetchall()
+            data = [row[1] for row in rows]
+            print(data)
+            if email in data:
+                return jsonify({"error":str("User Exits")})
             else:
                 id = str(uuid.uuid1())+email
                 postgres_insert_query = """ INSERT INTO "USERS" (uid, token, email,password) VALUES (%s,%s,%s,%s)"""
@@ -49,8 +50,7 @@ def register(email,password1):
                 return jsonify({"status":"successful"})
         else:
             Exception("Inavlid Email")
-            
-    except (Exception, psycopg2.Error) as error:
+    except Exception as error:
         print(error)
         return jsonify({"error":str(error)})
 
