@@ -58,7 +58,7 @@ def register(email,password1):
 
 
 
-@app.route('/api/userforgotpass/<string:uid><string:currentpass>/<string:newpassword>')
+@app.route('/api/userforgotpass/<string:uid>/<string:currentpass>/<string:newpassword>')
 def updatePassword(uid,currentpass,newpas):
     cursor.execute("""SELECT * from "USERS" WHERE uid = %s""",(uid,),)
     rows = cursor.fetchall()
