@@ -34,12 +34,19 @@ def genrate_token(key):
 def register(email,password1):
     try:
         if(re.fullmatch(regex, email)):
-            id = str(uuid.uuid1())+email
-            postgres_insert_query = """ INSERT INTO "USERS" (uid, token, email,password) VALUES (%s,%s,%s,%s)"""
-            record_to_insert = (id, genrate_token(id), email, password1)
-            cursor.execute(postgres_insert_query, record_to_insert)
-            conn.commit()
-            return jsonify({"status":"successful"})
+            searc_state = """SELECT * FROM "USERS" WHERE email = %s """
+            cursor.execute(searc_state,(email,))
+            row = cursor.fetchall()
+            print(row)
+            if email in row[0][1]:
+                Exception("User Exits")
+            else:
+                id = str(uuid.uuid1())+email
+                postgres_insert_query = """ INSERT INTO "USERS" (uid, token, email,password) VALUES (%s,%s,%s,%s)"""
+                record_to_insert = (id, genrate_token(id), email, password1)
+                cursor.execute(postgres_insert_query, record_to_insert)
+                conn.commit()
+                return jsonify({"status":"successful"})
         else:
             Exception("Inavlid Email")
             
@@ -95,7 +102,9 @@ def login(email,password):
 
 @app.route('/api/get_data',methods = ["GET"])
 def get_request():
-    return jsonify({"data":"e"})
+    cursor.execute("""SELECT * FROM "USERS" """)
+    row = cursor.fetchall()
+    return jsonify({"data":row})
 
     # conn = sqlite3.connect("user.db") 
     # try:
