@@ -15,7 +15,7 @@ import re
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 app = Flask(__name__)
 CORS(app)
-host = "inbox.postgres.database.azure.com port=5432"
+host = "inbox.postgres.database.azure.com"
 dbname = "postgres"
 user = "inbox"
 password = "google@99"
