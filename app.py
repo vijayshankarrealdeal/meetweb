@@ -98,7 +98,7 @@ def login(email,password):
     if(db_password == password): 
         token = genrate_token(db_uid)
         cursor.execute("""UPDATE "USERS" SET TOKEN = %s WHERE uid = %s""",(token, db_uid))
-        return jsonify({'token':token,"userId":db_uid})
+        return jsonify({'token':token,"uid":db_uid})
     else:
         return jsonify({'error':"Invalid Password"})
 
